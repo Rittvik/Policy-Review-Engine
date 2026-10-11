@@ -1,0 +1,235 @@
+{
+  "claim_id": "SAMPLE-CODING-MISMATCH",
+  "review_id": "REVIEW-CODING-MISMATCH",
+  "insurer": "HorizonCare",
+  "plan_name": "Silver PPO 2500",
+  "member_id": "MEMBER-CODE-08",
+  "claim_type": "pre_authorization",
+  "member_status": "active",
+  "service_date": "2025-03-18",
+  "service_location": "Synthetic clinic",
+  "provider_npi": "1234567898",
+  "procedure_code": "MRI-LUMBAR",
+  "procedure_description": null,
+  "diagnosis_codes": [
+    "H52.1"
+  ],
+  "claimed_amount": "1200",
+  "documents": [
+    {
+      "document_id": "NOTE",
+      "document_type": "clinical_note",
+      "status": "provided",
+      "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "HISTORY",
+      "document_type": "prior_treatment_history",
+      "status": "provided",
+      "text": "Synthetic treatment history: conservative treatment attempted.",
+      "submitted_in_review": null
+    }
+  ],
+  "notes": "",
+  "prior_authorization_approved": null,
+  "prior_claims": [],
+  "correction_declared": false,
+  "corrects_claim_id": null,
+  "coding_assessment": {
+    "request": {
+      "claim_id": "SAMPLE-CODING-MISMATCH",
+      "review_id": "REVIEW-CODING-MISMATCH",
+      "procedure_code": "MRI-LUMBAR",
+      "diagnosis_codes": [
+        "H52.1"
+      ]
+    },
+    "status": "inconsistent",
+    "source": "clinical-coding-reviewer",
+    "reason": "Eye disorder diagnosis H52.1 is clinically inconsistent with lumbar spine MRI procedure code MRI-LUMBAR.",
+    "source_version": null
+  },
+  "treatment_history_applicability": {
+    "request": {
+      "claim_id": "SAMPLE-CODING-MISMATCH",
+      "review_id": "REVIEW-CODING-MISMATCH",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-LUMBAR",
+      "diagnosis_codes": [
+        "H52.1"
+      ],
+      "expected_service_date": "2025-03-18",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "status": "required",
+    "source": "synthetic-clinician",
+    "reason": "Treatment history applicable in this synthetic case."
+  },
+  "clinical_assessment": {
+    "request": {
+      "claim_id": "SAMPLE-CODING-MISMATCH",
+      "review_id": "REVIEW-CODING-MISMATCH",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-LUMBAR",
+      "diagnosis_codes": [
+        "H52.1"
+      ],
+      "expected_service_date": "2025-03-18",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "diagnosis_support": {
+      "status": "established",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "medical_necessity": {
+      "status": "established",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "conservative_treatment_attempted": {
+      "status": "established",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ]
+    },
+    "conservative_treatment_contraindicated": {
+      "status": "not_established",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ]
+    }
+  },
+  "exclusion_assessment": {
+    "request": {
+      "claim_id": "SAMPLE-CODING-MISMATCH",
+      "review_id": "REVIEW-CODING-MISMATCH",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-LUMBAR",
+      "diagnosis_codes": [
+        "H52.1"
+      ],
+      "expected_service_date": "2025-03-18",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "screening_without_symptoms": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "cosmetic_or_reconstructive": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "required_by_trauma_or_congenital_anomaly": null,
+    "experimental_or_investigational": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "medically_unnecessary": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding for controller testing.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ]
+    },
+    "preventive_coverage": null
+  },
+  "payment_determination": null,
+  "authorization_assessment": null
+}

@@ -1,0 +1,48 @@
+{
+  "request_id": "req_cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "documented",
+      "statement": "Synthetic mock extraction, not clinical truth.",
+      "document_refs": [
+        {
+          "document_id": "NOTE1",
+          "quote": "The lumbar diagnosis is supported."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "documented",
+      "statement": "Synthetic mock extraction, not clinical truth.",
+      "document_refs": [
+        {
+          "document_id": "NOTE1",
+          "quote": "MRI is medically necessary."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "documented",
+      "statement": "Synthetic mock extraction, not clinical truth.",
+      "document_refs": [
+        {
+          "document_id": "NOTE1",
+          "quote": "Conservative treatment was attempted."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    }
+  ]
+}

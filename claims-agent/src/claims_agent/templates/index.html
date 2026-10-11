@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="review-token" content="{{ token }}" />
+    <title>Claims review desk</title>
+    <link rel="stylesheet" href="/static/app.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="brand">HC <span>HorizonCare · Review desk</span></div>
+      <div class="header-right">
+        <span class="badge">POLICY ENGINE ACTIVE</span>
+      </div>
+    </header>
+
+    <!-- Top Navigation Tabs -->
+    <nav class="view-nav" role="tablist" aria-label="Review desk pages">
+      <div class="nav-inner">
+        <button type="button" class="nav-tab active" id="tab-claim" role="tab" aria-selected="true" aria-controls="view-claim" data-view="view-claim">
+          <span class="tab-icon">📥</span>
+          <div class="tab-text">
+            <span class="tab-title">Claim Process</span>
+            <span class="tab-sub">Review & Assessment</span>
+          </div>
+        </button>
+        <button type="button" class="nav-tab" id="tab-history" role="tab" aria-selected="false" aria-controls="view-history" data-view="view-history">
+          <span class="tab-icon">📜</span>
+          <div class="tab-text">
+            <span class="tab-title">Saved History</span>
+            <span class="tab-sub">Audit Trail & Lineage</span>
+          </div>
+        </button>
+        <button type="button" class="nav-tab" id="tab-evals" role="tab" aria-selected="false" aria-controls="view-evals" data-view="view-evals">
+          <span class="tab-icon">📊</span>
+          <div class="tab-text">
+            <span class="tab-title">Evals Dashboard</span>
+            <span class="tab-sub">Metrics & Anthropic Rubric</span>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div id="message" role="status" aria-live="polite"></div>
+
+      <!-- ========================================== -->
+      <!-- PAGE 1: CLAIM PROCESS                      -->
+      <!-- ========================================== -->
+      <div id="view-claim" class="page-view active" role="tabpanel" aria-labelledby="tab-claim">
+        <div class="intro">
+          <p class="eyebrow">POLICY-GROUNDED CLAIMS REVIEW</p>
+          <h1>Evidence first.<br />A clear decision trail.</h1>
+          <p>
+            Review a claim or appeal a denial, inspect evidence, and record your clinical
+            assessment.<br />Pre-authorization, post-service payment, and formal appeal reassessment.
+          </p>
+        </div>
+        <p class="notice">
+          Synthetic samples · Local trusted reviewer · Action stubs only; no
+          payment or external claim changes. Fields marked with <span class="req">*</span> are required.
+        </p>
+
+        <!-- Choose a claim or appeal -->
+        <section aria-labelledby="input-title">
+          <div class="section-title">
+            <span class="step-icon">📥</span>
+            <div>
+              <h2 id="input-title">Choose a claim or appeal</h2>
+              <p>Start with a sample claim or appeal submission, or upload a JSON file.</p>
+            </div>
+          </div>
+          <div class="row">
+            <label class="grow"
+              >Sample claim or appeal <span class="req">*</span><select id="sample">
+                {% for key, label in samples %}
+                <option value="{{ key }}">{{ label }}</option>
+                {% endfor %}
+              </select></label
+            ><button id="load" class="secondary">Load sample</button
+            ><label class="upload"
+              >Upload JSON<input
+                id="upload"
+                type="file"
+                accept=".json,application/json"
+            /></label>
+          </div>
+
+          <details class="collapsible-panel">
+            <summary>View or edit claim JSON</summary>
+            <label for="claim">Claim input</label
+            ><textarea id="claim" rows="12" spellcheck="false"></textarea>
+          </details>
+
+          <div class="row review-id-control-row">
+            <label class="grow"
+              >Review Reference ID <span class="req">*</span>
+              <input
+                id="claim-review-id"
+                required
+                placeholder="e.g. REV-CLM-1-001"
+                title="Unique identifier for this review record in the append-only audit trail"
+              />
+            </label>
+            <button type="button" id="gen-review-id-btn" class="secondary" title="Generate a fresh unique Review ID to prevent collision in saved history">
+              🎲 New Unique ID
+            </button>
+            <label class="check auto-id-label" title="Automatically assign a fresh timestamped ID whenever a sample or file is loaded">
+              <input id="auto-unique-id" type="checkbox" checked />Auto-generate unique ID on load
+            </label>
+          </div>
+
+          <div id="claim-summary" class="summary"></div>
+
+          <details class="collapsible-panel" open>
+            <summary>Extraction mode & documents</summary>
+            <fieldset>
+              <label
+                >Mode<select id="mode">
+                  <option value="auto" selected>
+                    Automatic (Recommended) — Rules for deterministic cases, Gemini when clinical notes present
+                  </option>
+                  <option value="gemini">
+                    Live Gemini — Force AI advisory candidate extraction
+                  </option>
+                  <option value="disabled">
+                    Rules only — 100% deterministic, zero AI model calls
+                  </option>
+                </select></label
+              >
+              <div id="mode-note" class="notice">
+                Automatic Mode: Evaluates 100% deterministic rules for administrative checks, eligibility, and verified facts. Automatically invokes Gemini advisory extraction when unstructured clinical notes require evaluation.
+              </div>
+              <div id="documents"></div>
+            </fieldset>
+          </details>
+
+          <div class="actions">
+            <button id="preview" class="secondary">
+              Preview selected model input</button
+            ><label class="check"
+              ><input id="save" type="checkbox" checked />Save initial review to database</label
+            ><button id="run" class="primary-btn">Run review</button>
+          </div>
+
+          <details id="preview-panel" hidden class="collapsible-panel">
+            <summary>Selected text and policy sent to the model</summary>
+            <div id="preview-data"></div>
+          </details>
+        </section>
+
+        <!-- Decision & evidence -->
+        <section id="result" hidden aria-labelledby="result-title">
+          <div class="section-title">
+            <span class="step-icon">⚖️</span>
+            <div>
+              <h2 id="result-title">Decision & evidence</h2>
+              <p id="persistence"></p>
+            </div>
+          </div>
+          <div id="decision"></div>
+          <div id="intelligence-card"></div>
+          <div id="extraction"></div>
+          <div class="actions">
+            <button id="download" class="secondary">Download review JSON</button>
+            <button id="jump-to-history-btn" class="secondary" hidden>📜 View in Saved History ➔</button>
+          </div>
+        </section>
+
+        <!-- Assess clinical findings -->
+        <section id="assessment" hidden aria-labelledby="assessment-title">
+          <div class="section-title">
+            <span class="step-icon">🩺</span>
+            <div>
+              <h2 id="assessment-title">Assess clinical findings</h2>
+              <p>
+                Inspect the original text and policy. An extracted statement is
+                not a clinical verdict. Complete all fields marked with <span class="req">*</span>.
+              </p>
+            </div>
+          </div>
+
+          <details id="sources-details" class="collapsible-panel" open>
+            <summary>📖 View source documents & retrieved policy excerpts</summary>
+            <div id="sources"></div>
+          </details>
+
+          <form id="confirm-form">
+            <div class="row">
+              <label class="grow"
+                >Reviewer ID <span class="req">*</span><input
+                  id="reviewer-id"
+                  required
+                  placeholder="e.g. DR_SMITH or REV-001" /></label
+              ><label class="grow"
+                >New review ID <span class="req">*</span><input id="new-review-id" required
+              /></label>
+            </div>
+
+            <div class="findings-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <h3>Clinical topics for evaluation <span class="req">*</span></h3>
+                <p class="muted">Review each clinical requirement below, select your verdict, provide reasoning and source evidence quotes.</p>
+              </div>
+              <button type="button" id="autofill-assessment-btn" class="secondary" style="font-size: 13px; font-weight: 600; padding: 6px 14px; cursor: pointer;">
+                ⚡ Autofill verified clinical findings
+              </button>
+            </div>
+
+            <div id="findings"></div>
+
+            <details id="carry-details" class="collapsible-panel" hidden>
+              <summary>Optional: Carry forward existing assessments</summary>
+              <p class="muted">
+                Only select assessments you have reviewed and accept for this
+                unchanged claim. Unselected assessments become unknown.
+              </p>
+              <div id="carry"></div>
+            </details>
+
+            <label class="check confirmation"
+              ><input type="checkbox" id="confirmed" required />I have reviewed
+              the source documents, policy and each finding. <span class="req">*</span></label
+            ><button type="submit" class="primary-btn">Confirm assessment & rerun decision</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- PAGE 2: SAVED HISTORY                      -->
+      <!-- ========================================== -->
+      <div id="view-history" class="page-view" role="tabpanel" aria-labelledby="tab-history" hidden>
+        <div class="intro">
+          <p class="eyebrow">AUDIT TRAIL & CLAIM LINEAGE</p>
+          <h1>Saved Review History</h1>
+          <p>
+            Search, inspect, and verify exact review records, policy snapshots,
+            and full revision lineage for any claim.
+          </p>
+        </div>
+
+        <section aria-labelledby="history-title">
+          <div class="section-title">
+            <span class="step-icon">📜</span>
+            <div>
+              <h2 id="history-title">Lookup review record</h2>
+              <p>Enter a saved Review Reference ID to view its complete audit snapshot and lineage.</p>
+            </div>
+          </div>
+
+          <form id="history-form" class="row">
+            <label class="grow"
+              >Review ID <span class="req">*</span><input
+                id="history-id"
+                required
+                placeholder="e.g. CLINICAL-REVIEWED-1, APPEAL-1, or a generated ID" /></label
+            ><button type="submit" class="primary-btn">Find history</button>
+            <button type="button" id="toggle-list-btn" class="secondary" title="View paginated list of all saved reviews">📋 View list (<span id="total-saved-badge">0</span>)</button>
+            <button type="button" id="refresh-history-btn" class="secondary" title="Fetch latest saved reviews from SQLite">🔄 Refresh</button>
+            <button type="button" id="clear-history-btn" class="secondary danger-btn" title="Delete all saved review history from SQLite database">🗑️ Delete Review History</button>
+          </form>
+
+          <div class="quick-lookups">
+            <span class="muted">Sample reviews:</span>
+            <button type="button" class="chip-btn" data-search-id="CLINICAL-REVIEWED-1">CLINICAL-REVIEWED-1</button>
+            <button type="button" class="chip-btn" data-search-id="APPEAL-1">APPEAL-1</button>
+          </div>
+
+          <div id="history"></div>
+
+          <div id="saved-list-container" class="recent-reviews-section">
+            <div class="section-subtitle-bar">
+              <div class="section-subtitle">
+                <h3>All Saved Reviews in Audit Store</h3>
+                <p class="muted">Browse saved review records across multiple pages (newest first). Click any review to inspect details.</p>
+              </div>
+              <button type="button" id="clear-history-list-btn" class="secondary danger-btn" title="Delete all saved reviews from SQLite database">
+                🗑️ Clear All Saved Reviews
+              </button>
+            </div>
+            <div id="recent-history-list"></div>
+            <div id="pagination-bar" class="pagination-controls"></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- PAGE 3: EVALUATION DASHBOARD & RUBRIC      -->
+      <!-- ========================================== -->
+      <div id="view-evals" class="page-view" role="tabpanel" aria-labelledby="tab-evals" hidden>
+        <div class="intro">
+          <p class="eyebrow">OPEN-SOURCE AI OBSERVABILITY & EVALUATION</p>
+          <h1>Arize Phoenix Observability Dashboard</h1>
+          <p>
+            Continuous evaluation and safety observability across all 35 policy-grounded benchmark scenarios (20 core clinical adjudications + 15 canonical policy-governed scenarios). Powered by local Arize Phoenix evaluators with zero external cloud dependencies or API keys.
+          </p>
+        </div>
+
+        <!-- Arize Phoenix Observability Header Banner -->
+        <section class="phoenix-hero-card" aria-labelledby="phoenix-hero-title">
+          <div class="phoenix-hero-header">
+            <div class="phoenix-badge-group">
+              <span class="phoenix-pill-badge">🔥 ARIZE PHOENIX OBSERVER</span>
+              <span class="phoenix-version-badge" id="phoenix-version-pill">v20.20.0 (Local Engine)</span>
+            </div>
+            <div class="phoenix-actions">
+              <span class="phoenix-cli-hint">Launch interactive UI: <code>python scripts/phoenix_eval.py --serve --port 6006</code></span>
+              <button type="button" id="refresh-evals-btn" class="secondary">🔄 Re-run Evals</button>
+            </div>
+          </div>
+          <div class="phoenix-stats-summary" id="phoenix-summary-bar">
+            <!-- Populated via JS -->
+          </div>
+        </section>
+
+        <!-- Arize Phoenix Distributions Section -->
+        <div class="phoenix-dist-grid" id="phoenix-distributions-panel">
+          <!-- Populated via JS -->
+        </div>
+
+        <section aria-labelledby="eval-summary-title">
+          <div class="section-title">
+            <span class="step-icon">🎯</span>
+            <div class="title-text">
+              <h2 id="eval-summary-title">Arize Phoenix Evaluator Scorecards</h2>
+              <p>Custom code evaluators across 7 governance, correctness, safety, and adverse notice axes.</p>
+            </div>
+          </div>
+
+          <div class="eval-cards-grid" id="eval-scorecards">
+            <!-- Populated via JS -->
+          </div>
+        </section>
+
+        <section aria-labelledby="eval-cases-title">
+          <div class="section-title">
+            <span class="step-icon">📋</span>
+            <div class="title-text">
+              <h2 id="eval-cases-title">Adjudication & Extraction Matrix (35 Evaluated Cases)</h2>
+              <p>Inspect test scenarios, expected actions, policy citations, and adverse letter generations.</p>
+            </div>
+          </div>
+
+          <div class="eval-filter-bar">
+            <span class="filter-label">Filter:</span>
+            <button type="button" class="filter-btn active" data-filter="all">All Cases</button>
+            <button type="button" class="filter-btn" data-filter="happy">Happy Paths</button>
+            <button type="button" class="filter-btn" data-filter="denial">Denials & Pends</button>
+            <button type="button" class="filter-btn" data-filter="adversarial">Adversarial Defense</button>
+            <button type="button" class="filter-btn" data-filter="extractions">Advisory Extractions</button>
+          </div>
+
+          <div id="eval-cases-container" class="eval-cases-list">
+            <!-- Populated via JS -->
+          </div>
+        </section>
+
+        <section aria-labelledby="eval-rubric-title">
+          <div class="section-title">
+            <span class="step-icon">📐</span>
+            <div class="title-text">
+              <h2 id="eval-rubric-title">Anthropic Multi-Dimensional Rubric & Phoenix Spec</h2>
+              <p>5-dimension grading criteria adapted from Anthropic's agent evaluation guidelines combined with Arize Phoenix evaluators.</p>
+            </div>
+          </div>
+          <div id="eval-rubric-content" class="rubric-markdown-box">
+            <!-- Populated via JS -->
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        HorizonCare Silver PPO 2500 · Policy-wide service review<br />Reviewer
+        labels are not authenticated accounts. Keep this demonstration on your
+        own computer.
+      </footer>
+    </main>
+  </body>
+</html>

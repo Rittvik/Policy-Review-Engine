@@ -1,0 +1,293 @@
+{
+  "claim_id": "SYNTHETIC-CT",
+  "review_id": "SERVICE-ct-no-authorization",
+  "insurer": "HorizonCare",
+  "plan_name": "Silver PPO 2500",
+  "member_id": "MEMBER-1",
+  "claim_type": "payment",
+  "member_status": "active",
+  "service_date": "2025-03-10",
+  "service_location": "Synthetic clinic",
+  "provider_npi": "1234567890",
+  "procedure_code": "CT",
+  "procedure_description": null,
+  "diagnosis_codes": [
+    "M54.5"
+  ],
+  "claimed_amount": "1200",
+  "documents": [
+    {
+      "document_id": "NOTE",
+      "document_type": "clinical_note",
+      "status": "provided",
+      "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "HISTORY",
+      "document_type": "prior_treatment_history",
+      "status": "provided",
+      "text": "Synthetic treatment history: conservative treatment attempted.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "CALC",
+      "document_type": "payment_calculation",
+      "status": "provided",
+      "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "AUTH",
+      "document_type": "authorization",
+      "status": "provided",
+      "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+      "submitted_in_review": null
+    }
+  ],
+  "notes": "",
+  "prior_authorization_approved": null,
+  "prior_claims": [],
+  "correction_declared": false,
+  "corrects_claim_id": null,
+  "coding_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-CT",
+      "review_id": "SERVICE-ct-no-authorization",
+      "procedure_code": "CT",
+      "diagnosis_codes": [
+        "M54.5"
+      ]
+    },
+    "status": "consistent",
+    "source": "synthetic-coding-reviewer",
+    "reason": "Synthetic coding assessment.",
+    "source_version": null
+  },
+  "treatment_history_applicability": null,
+  "clinical_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-CT",
+      "review_id": "SERVICE-ct-no-authorization",
+      "claim_type": "payment",
+      "procedure_code": "CT",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "diagnosis_support": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "medical_necessity": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "conservative_treatment_attempted": null,
+    "conservative_treatment_contraindicated": null,
+    "emergency_service": {
+      "status": "not_established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    }
+  },
+  "exclusion_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-CT",
+      "review_id": "SERVICE-ct-no-authorization",
+      "claim_type": "payment",
+      "procedure_code": "CT",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "screening_without_symptoms": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "cosmetic_or_reconstructive": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "required_by_trauma_or_congenital_anomaly": null,
+    "experimental_or_investigational": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "medically_unnecessary": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false."
+        }
+      ]
+    },
+    "preventive_coverage": null
+  },
+  "payment_determination": {
+    "request": {
+      "claim_id": "SYNTHETIC-CT",
+      "review_id": "SERVICE-ct-no-authorization",
+      "claim_type": "payment",
+      "insurer": "HorizonCare",
+      "plan_name": "Silver PPO 2500",
+      "member_id": "MEMBER-1",
+      "provider_npi": "1234567890",
+      "service_date": "2025-03-10",
+      "procedure_code": "CT",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "claimed_amount": "1200",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is false.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "status": "determined",
+    "payable_amount": "900",
+    "source": "synthetic-benefits-reviewer",
+    "reason": "Synthetic calculation.",
+    "evidence": [
+      {
+        "document_id": "CALC",
+        "quote": "Synthetic trusted benefit calculation: payable amount 900 dollars."
+      }
+    ]
+  },
+  "authorization_assessment": null
+}

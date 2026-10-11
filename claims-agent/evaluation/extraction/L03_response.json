@@ -1,0 +1,38 @@
+{
+  "request_id": "req_a5fb28889fcda1323b05b8176d6a18d6070a77114b76941d1b08d992c24da8c7",
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "documented",
+      "statement": "Synthetic mock extraction, not clinical truth.",
+      "document_refs": [
+        {
+          "document_id": "NOTE1",
+          "quote": "The lumbar diagnosis is supported."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    }
+  ]
+}

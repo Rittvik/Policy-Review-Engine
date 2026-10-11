@@ -1,0 +1,67 @@
+# ==============================================================================
+# Environment & Secret Credentials (CRITICAL - NEVER COMMIT SECRETS)
+# ==============================================================================
+.env
+.env.*
+.env*.local
+*.env
+**/.env
+**/.env.*
+!.env.example
+
+# ==============================================================================
+# Python Runtime, Virtual Environments & Caches
+# ==============================================================================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+**/.venv/
+env/
+venv/
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+*.egg-info/
+**/*.egg-info/
+
+# ==============================================================================
+# Review History & SQLite Databases (Ephemeral Runtime Data)
+# ==============================================================================
+*.sqlite3
+*.sqlite3-journal
+*.db
+.review-history/
+**/.review-history/
+.policy-cache/
+**/.policy-cache/
+
+# ==============================================================================
+# Build & Distribution Artifacts
+# ==============================================================================
+dist/
+**/dist/
+build/
+*.zip
+**/*.zip
+
+# ==============================================================================
+# Operating System & Editor Metadata
+# ==============================================================================
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# ==============================================================================
+# Local Tools & Scratch Dumps
+# ==============================================================================
+chrome-headless-shell/
+puppeteer-config.json

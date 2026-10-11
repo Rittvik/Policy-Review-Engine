@@ -1,0 +1,47 @@
+{
+  "packet_sha256": "130ebf71565759ecb1cfe3934fb335e1143a70679fd56ca46a39a05a301dcccf",
+  "reviewer_id": "synthetic-ct-reviewer",
+  "reviewed_at": "2026-10-09T13:33:01.031669+00:00",
+  "new_review_id": "CT-CONFIRMED-DEMO",
+  "confirmed_sources": true,
+  "carry_forward_assessments": [
+    "coding_assessment",
+    "exclusion_assessment",
+    "payment_determination"
+  ],
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "established",
+      "reason": "Synthetic reviewer explicitly accepts the source statement for this predicate; this is not an actual clinical sign-off.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported;"
+        }
+      ]
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "established",
+      "reason": "Synthetic reviewer explicitly accepts the source statement for this predicate; this is not an actual clinical sign-off.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives."
+        }
+      ]
+    },
+    {
+      "topic": "emergency_service",
+      "status": "established",
+      "reason": "Synthetic reviewer explicitly accepts the source statement for this predicate; this is not an actual clinical sign-off.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "emergency_service is true."
+        }
+      ]
+    }
+  ]
+}

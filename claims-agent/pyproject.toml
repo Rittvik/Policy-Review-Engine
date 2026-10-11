@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policy-claims-agent"
+version = "0.1.0"
+description = "Policy-grounded claims review assessment prototype"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2,<3",
+    "pypdf>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+gemini = ["google-genai>=1.75,<2"]
+web = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "jinja2>=3.1.6,<4", "httpx>=0.28,<1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.package-data]
+claims_agent = ["templates/*.html", "static/*.css", "static/*.js"]
+
+[tool.pyright]
+extraPaths = ["src", "scripts"]

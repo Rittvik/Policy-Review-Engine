@@ -1,0 +1,141 @@
+{
+  "format_version": 2,
+  "extractor_version": "6.19.0",
+  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+  "source_file": "horizoncare_silver_ppo_2500.pdf",
+  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+  "page_count": 3,
+  "chunks_sha256": "7b72d434d5d54bd1448dc2755f932e33374fc0eb552067d1a819bc2ca09e7804",
+  "chunks": [
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s1:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "1",
+      "heading": "Overview of Covered Benefits",
+      "source_page": 1,
+      "text": "This Policy provides coverage for Medically Necessary services that are not otherwise excluded.\nCovered Benefits include, but are not limited to:\n Physician office visits and specialist consultations\n Diagnostic imaging (e.g., ultrasound, CT, MRI)\n Outpatient procedures\n Emergency services\n Prescription drugs (Formulary-based)\nCoverage is subject to member eligibility, cost-sharing, Prior Authorization requirements, and all\nlimitations in this Policy."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "2",
+      "heading": "Member Eligibility and Plan Status",
+      "source_page": 1,
+      "text": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member’s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: “Plan inactive at time of service.”"
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s3:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "3",
+      "heading": "Prior Authorization (Pre-Approval)",
+      "source_page": 1,
+      "text": "Prior Authorization is required for certain high-cost or high-risk services before they are performed."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s3.1:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "3.1",
+      "heading": "Services Requiring Prior Authorization",
+      "source_page": 1,
+      "text": "The following services require Prior Authorization:\n MRI (all anatomical regions)\n CT scans (except emergency)\n Elective inpatient admissions\n Durable medical equipment (DME) exceeding $500\n Specialty drugs listed as “PA Required” on the Formulary\nClaims for these services performed without approval may be denied unless retroactive authorization\nis granted."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "3.2",
+      "heading": "Documentation Required",
+      "source_page": 2,
+      "text": "Prior Authorization requests must include:\n1. Ordering provider’s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "4",
+      "heading": "Medical Necessity Standard",
+      "source_page": 2,
+      "text": "A service is considered Medically Necessary if it is:\n Consistent with generally accepted standards of medical practice;\n Clinically appropriate in type, frequency, and setting;\n Not primarily for convenience of the member or provider;\n The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "5.1",
+      "heading": "MRI Coverage",
+      "source_page": 2,
+      "text": "MRI is covered when all of the following conditions are met:\n A covered diagnosis is present; and\n Conservative treatment has been attempted (unless contraindicated); and\n Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n M54.5 Low back pain\n M51.26 Other intervertebral disc displacement, lumbar region"
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "5.2",
+      "heading": "Non-Covered Imaging",
+      "source_page": 2,
+      "text": "Diagnostic imaging is not covered when:\n Requested for screening without symptoms, unless explicitly included as preventive care;\n Related to excluded procedures;\n Lacking documentation supporting Medical Necessity."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "6",
+      "heading": "Exclusions",
+      "source_page": 2,
+      "text": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "7.1",
+      "heading": "Duplicate Claims",
+      "source_page": 3,
+      "text": "A claim is considered duplicate if all of the following match:\n Member ID\n Provider NPI\n Date of service\n CPT / procedure code\n Billed amount\nDuplicate claims will be denied with reason: “Duplicate claim submission.”"
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "7.2",
+      "heading": "Coding Consistency",
+      "source_page": 3,
+      "text": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s8:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "8",
+      "heading": "Appeals",
+      "source_page": 3,
+      "text": "Members and providers have the right to appeal a denial within 180 days.\nAppeals must include:\n A written appeal request\n The denial letter or claim reference number\n Any new clinical documentation relevant to the denial reason\nAppeals without new or relevant documentation may be upheld."
+    },
+    {
+      "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s9:1",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_file": "horizoncare_silver_ppo_2500.pdf",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "section": "9",
+      "heading": "Contact Information",
+      "source_page": 3,
+      "text": "For questions about benefits, Prior Authorization, or claim status, contact HorizonCare Member\nSupport at 1-800-555-0199 or via the Member Portal."
+    }
+  ]
+}

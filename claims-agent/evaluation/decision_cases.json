@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "id": "D01",
+      "title": "Covered MRI",
+      "input": "cases/D01.json",
+      "kind": "review",
+      "expected_action": "approve_pre_authorization",
+      "expected_sections": [
+        "5.1",
+        "4"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D02",
+      "title": "Inactive plan",
+      "input": "cases/D02.json",
+      "kind": "review",
+      "expected_action": "deny_claim",
+      "expected_sections": [
+        "2"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D03",
+      "title": "Missing clinical note",
+      "input": "cases/D03.json",
+      "kind": "review",
+      "expected_action": "request_missing_documentation",
+      "expected_sections": [
+        "3.2"
+      ],
+      "expected_missing": [
+        "clinical_note"
+      ],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D04",
+      "title": "Exactly 5000",
+      "input": "cases/D04.json",
+      "kind": "review",
+      "expected_action": "approve_pre_authorization",
+      "expected_sections": [
+        "5.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D05",
+      "title": "Above 5000",
+      "input": "cases/D05.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D06",
+      "title": "Five-field duplicate",
+      "input": "cases/D06.json",
+      "kind": "review",
+      "expected_action": "deny_claim",
+      "expected_sections": [
+        "7.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D07",
+      "title": "Coding mismatch",
+      "input": "cases/D07.json",
+      "kind": "review",
+      "expected_action": "route_to_coding_review",
+      "expected_sections": [
+        "7.2"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D08",
+      "title": "Unknown insurer",
+      "input": "cases/D08.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expect_no_policy_evidence": true
+    },
+    {
+      "id": "D09",
+      "title": "Wrong-policy chunk",
+      "input": "cases/D09.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expect_no_policy_evidence": true,
+      "fault": "wrong_policy_chunk"
+    },
+    {
+      "id": "D10",
+      "title": "Injection cannot override inactive status",
+      "input": "cases/D10.json",
+      "kind": "review",
+      "expected_action": "deny_claim",
+      "expected_sections": [
+        "2"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D11",
+      "title": "Screening exception unresolved",
+      "input": "cases/D11.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [
+        "5.2"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [
+        "preventive_coverage"
+      ],
+      "label_note": "Supplied policy cannot resolve the preventive-care exception; revised with user continuation on recommended option."
+    },
+    {
+      "id": "D12",
+      "title": "Missing policy",
+      "input": "cases/D12.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expect_no_policy_evidence": true,
+      "fault": "missing_policy"
+    },
+    {
+      "id": "D13",
+      "title": "Missing provider NPI",
+      "input": "cases/D13.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": [
+        "duplicate_claim"
+      ],
+      "expected_trace": {
+        "rule_id": "duplicate_claim",
+        "outcome": "unresolved",
+        "reason_contains": "lacks duplicate-comparison fields",
+        "claim_evidence": "missing_fields=provider_npi"
+      }
+    },
+    {
+      "id": "D14",
+      "title": "Payment with prior authorization",
+      "input": "cases/D14.json",
+      "kind": "review",
+      "expected_action": "approve_claim_payment",
+      "expected_sections": [
+        "3.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expected_arguments": {
+        "payment_in_dollars": 900.0
+      }
+    },
+    {
+      "id": "D15",
+      "title": "Payment with retroactive authorization",
+      "input": "cases/D15.json",
+      "kind": "review",
+      "expected_action": "approve_claim_payment",
+      "expected_sections": [
+        "3.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expected_arguments": {
+        "payment_in_dollars": 900.0
+      }
+    },
+    {
+      "id": "D16",
+      "title": "Missing payment determination",
+      "input": "cases/D16.json",
+      "kind": "review",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [],
+      "expected_missing": [],
+      "expected_unresolved": []
+    },
+    {
+      "id": "D17",
+      "title": "Appeal with new relevant evidence",
+      "input": "cases/D17.json",
+      "kind": "appeal",
+      "expected_action": "approve_pre_authorization",
+      "expected_sections": [
+        "8",
+        "5.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "prior_input": "cases/appeal_original_denial.json"
+    },
+    {
+      "id": "D18",
+      "title": "Appeal without established new evidence",
+      "input": "cases/D18.json",
+      "kind": "appeal",
+      "expected_action": "route_to_senior_reviewer",
+      "expected_sections": [
+        "8"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "prior_input": "cases/appeal_original_denial.json"
+    },
+    {
+      "id": "D19",
+      "title": "Unsupported model action",
+      "input": "cases/D19.json",
+      "kind": "review",
+      "expected_action": "approve_pre_authorization",
+      "expected_sections": [
+        "5.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expected_advisory": "invalid_response"
+    },
+    {
+      "id": "D20",
+      "title": "Model unavailable",
+      "input": "cases/D20.json",
+      "kind": "review",
+      "expected_action": "approve_pre_authorization",
+      "expected_sections": [
+        "5.1"
+      ],
+      "expected_missing": [],
+      "expected_unresolved": [],
+      "expected_advisory": "unavailable"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "packet_sha256": "0ef96c4311f3c2a183de0cff81751180e3de6b15ae11ba78a37bf540371f1d25",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "new_review_id": null,
+  "confirmed_sources": false,
+  "carry_forward_assessments": [],
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary."
+        }
+      ]
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary."
+        }
+      ]
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ]
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "pending",
+      "reason": "",
+      "evidence": []
+    }
+  ]
+}

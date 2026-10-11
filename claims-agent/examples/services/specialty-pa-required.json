@@ -1,0 +1,408 @@
+{
+  "claim_id": "SYNTHETIC-SPECIALTY-PA",
+  "review_id": "REVIEW-SPEC-PA",
+  "insurer": "HorizonCare",
+  "plan_name": "Silver PPO 2500",
+  "member_id": "MEMBER-SPEC-16",
+  "claim_type": "payment",
+  "member_status": "active",
+  "service_date": "2025-03-26",
+  "service_location": "Synthetic clinic",
+  "provider_npi": "8234567890",
+  "procedure_code": "SPECIALTY-DRUG",
+  "procedure_description": null,
+  "diagnosis_codes": [
+    "M54.5"
+  ],
+  "claimed_amount": "1200",
+  "documents": [
+    {
+      "document_id": "NOTE",
+      "document_type": "clinical_note",
+      "status": "provided",
+      "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "HISTORY",
+      "document_type": "prior_treatment_history",
+      "status": "provided",
+      "text": "Synthetic treatment history: conservative treatment attempted.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "CALC",
+      "document_type": "payment_calculation",
+      "status": "provided",
+      "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "AUTH",
+      "document_type": "authorization",
+      "status": "provided",
+      "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "FORMULARY",
+      "document_type": "formulary",
+      "status": "provided",
+      "text": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True.",
+      "submitted_in_review": null
+    }
+  ],
+  "notes": "",
+  "prior_authorization_approved": null,
+  "prior_claims": [],
+  "correction_declared": false,
+  "corrects_claim_id": null,
+  "coding_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-SPECIALTY-PA",
+      "review_id": "REVIEW-SPEC-PA",
+      "procedure_code": "SPECIALTY-DRUG",
+      "diagnosis_codes": [
+        "M54.5"
+      ]
+    },
+    "status": "consistent",
+    "source": "synthetic-coding-reviewer",
+    "reason": "Synthetic coding assessment.",
+    "source_version": null
+  },
+  "treatment_history_applicability": null,
+  "clinical_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-SPECIALTY-PA",
+      "review_id": "REVIEW-SPEC-PA",
+      "claim_type": "payment",
+      "procedure_code": "SPECIALTY-DRUG",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "service_date": "2025-03-26",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "FORMULARY",
+          "document_type": "formulary",
+          "status": "provided",
+          "text": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "diagnosis_support": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "medical_necessity": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "conservative_treatment_attempted": null,
+    "conservative_treatment_contraindicated": null,
+    "specialty_drug": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Specialty drug verification.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "formulary_coverage": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Formulary coverage verified.",
+      "evidence": [
+        {
+          "document_id": "FORMULARY",
+          "quote": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True."
+        }
+      ]
+    },
+    "formulary_pa_required": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Prior authorization requirement verified.",
+      "evidence": [
+        {
+          "document_id": "FORMULARY",
+          "quote": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True."
+        }
+      ]
+    }
+  },
+  "exclusion_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-SPECIALTY-PA",
+      "review_id": "REVIEW-SPEC-PA",
+      "claim_type": "payment",
+      "procedure_code": "SPECIALTY-DRUG",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "service_date": "2025-03-26",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "FORMULARY",
+          "document_type": "formulary",
+          "status": "provided",
+          "text": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "screening_without_symptoms": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "cosmetic_or_reconstructive": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "required_by_trauma_or_congenital_anomaly": null,
+    "experimental_or_investigational": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "medically_unnecessary": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true."
+        }
+      ]
+    },
+    "preventive_coverage": null
+  },
+  "payment_determination": {
+    "request": {
+      "claim_id": "SYNTHETIC-SPECIALTY-PA",
+      "review_id": "REVIEW-SPEC-PA",
+      "claim_type": "payment",
+      "insurer": "HorizonCare",
+      "plan_name": "Silver PPO 2500",
+      "member_id": "MEMBER-SPEC-16",
+      "provider_npi": "8234567890",
+      "service_date": "2025-03-26",
+      "procedure_code": "SPECIALTY-DRUG",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "claimed_amount": "1200",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "FORMULARY",
+          "document_type": "formulary",
+          "status": "provided",
+          "text": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "status": "determined",
+    "payable_amount": "900",
+    "source": "synthetic-benefits-reviewer",
+    "reason": "Synthetic calculation.",
+    "evidence": [
+      {
+        "document_id": "CALC",
+        "quote": "Synthetic trusted benefit calculation: payable amount 900 dollars."
+      }
+    ]
+  },
+  "authorization_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-SPECIALTY-PA",
+      "review_id": "REVIEW-SPEC-PA",
+      "claim_type": "payment",
+      "insurer": "HorizonCare",
+      "plan_name": "Silver PPO 2500",
+      "member_id": "MEMBER-SPEC-16",
+      "provider_npi": "8234567890",
+      "service_date": "2025-03-26",
+      "procedure_code": "SPECIALTY-DRUG",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "claimed_amount": "1200",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. specialty_drug is true.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "CALC",
+          "document_type": "payment_calculation",
+          "status": "provided",
+          "text": "Synthetic trusted benefit calculation: payable amount 900 dollars.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "AUTH",
+          "document_type": "authorization",
+          "status": "provided",
+          "text": "Synthetic authorization reviewer: authorization approved for this completed service.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "FORMULARY",
+          "document_type": "formulary",
+          "status": "provided",
+          "text": "Synthetic HorizonCare Silver PPO 2500 formulary v1, current for this service: SPECIALTY-DRUG; covered=True; PA Required=True.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "prior": {
+      "status": "approved",
+      "source": "synthetic-authorization-reviewer",
+      "reason": "Synthetic authorization approval finding.",
+      "evidence": [
+        {
+          "document_id": "AUTH",
+          "quote": "Synthetic authorization reviewer: authorization approved for this completed service."
+        }
+      ]
+    },
+    "retroactive": null
+  }
+}

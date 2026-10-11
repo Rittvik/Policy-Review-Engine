@@ -1,0 +1,146 @@
+[
+  {
+    "file": "mri-brain.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "mri-knee-preauth.json",
+    "expected_action": "approve_pre_authorization",
+    "expected_unresolved": []
+  },
+  {
+    "file": "ct-routine.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "ct-emergency.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "ct-emergency-unknown.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "emergency_service"
+    ]
+  },
+  {
+    "file": "ct-no-authorization.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "current_authorization_assessment"
+    ]
+  },
+  {
+    "file": "ultrasound.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "office-visit.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "specialist.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "outpatient.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "emergency-service.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "inpatient-elective.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "inpatient-nonelective.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "inpatient-unknown.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "elective_admission"
+    ]
+  },
+  {
+    "file": "dme-exactly-500.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 400.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "dme-over-500-no-auth.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "current_authorization_assessment"
+    ]
+  },
+  {
+    "file": "dme-over-500-approved.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 560.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "dme-cost-unknown.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "current_equipment_cost_assessment"
+    ]
+  },
+  {
+    "file": "drug-formulary.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "specialty-pa-required.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "specialty-no-pa.json",
+    "expected_action": "approve_claim_payment",
+    "expected_payment": 900.0,
+    "expected_unresolved": []
+  },
+  {
+    "file": "drug-formulary-missing.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "formulary_coverage"
+    ]
+  },
+  {
+    "file": "specialty-pa-unknown.json",
+    "expected_action": "route_to_senior_reviewer",
+    "expected_unresolved": [
+      "formulary_pa_required"
+    ]
+  }
+]

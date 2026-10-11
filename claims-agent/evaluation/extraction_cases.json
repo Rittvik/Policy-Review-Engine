@@ -1,0 +1,254 @@
+{
+  "cases": [
+    {
+      "id": "L01",
+      "input": "extraction/L01.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "MRI is medically necessary."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "Conservative treatment was attempted."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L01_response.json"
+    },
+    {
+      "id": "L02",
+      "input": "extraction/L02.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "MRI is medically necessary."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "Conservative treatment is contraindicated."
+            }
+          ]
+        }
+      ],
+      "mock_response": "extraction/L02_response.json"
+    },
+    {
+      "id": "L03",
+      "input": "extraction/L03.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L03_response.json"
+    },
+    {
+      "id": "L04",
+      "input": "extraction/L04.json",
+      "document_ids": [
+        "NOTE1",
+        "NOTE2"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "conflicting",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "MRI is medically necessary."
+            },
+            {
+              "document_id": "NOTE2",
+              "quote": "MRI is not medically necessary."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "Conservative treatment was attempted."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L04_response.json"
+    },
+    {
+      "id": "L05",
+      "input": "extraction/L05.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "not_found",
+          "anchors": []
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L05_response.json"
+    },
+    {
+      "id": "L06",
+      "input": "extraction/L06.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "MRI is medically necessary."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "Conservative treatment was attempted."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L06_response.json"
+    }
+  ]
+}

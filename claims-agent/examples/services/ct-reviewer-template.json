@@ -1,0 +1,43 @@
+{
+  "packet_sha256": "130ebf71565759ecb1cfe3934fb335e1143a70679fd56ca46a39a05a301dcccf",
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "new_review_id": null,
+  "confirmed_sources": false,
+  "carry_forward_assessments": [],
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported;"
+        }
+      ]
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives."
+        }
+      ]
+    },
+    {
+      "topic": "emergency_service",
+      "status": "pending",
+      "reason": "",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "emergency_service is true."
+        }
+      ]
+    }
+  ]
+}

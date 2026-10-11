@@ -1,0 +1,521 @@
+{
+  "cli_schema_version": 1,
+  "decision": {
+    "context": {
+      "claim_id": "SYNTHETIC-CT",
+      "review_id": "SERVICE-ct-review",
+      "reason": "Required checks remain unresolved; senior review is required.",
+      "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+      "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+      "policy_evidence": [
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "2",
+          "heading": "Member Eligibility and Plan Status",
+          "source_page": 1,
+          "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member’s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: “Plan inactive at time of service.”"
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "7.1",
+          "heading": "Duplicate Claims",
+          "source_page": 3,
+          "quote": "A claim is considered duplicate if all of the following match:\n Member ID\n Provider NPI\n Date of service\n CPT / procedure code\n Billed amount\nDuplicate claims will be denied with reason: “Duplicate claim submission.”"
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "6",
+          "heading": "Exclusions",
+          "source_page": 2,
+          "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "7.2",
+          "heading": "Coding Consistency",
+          "source_page": 3,
+          "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "5.2",
+          "heading": "Non-Covered Imaging",
+          "source_page": 2,
+          "quote": "Diagnostic imaging is not covered when:\n Requested for screening without symptoms, unless explicitly included as preventive care;\n Related to excluded procedures;\n Lacking documentation supporting Medical Necessity."
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s1:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "1",
+          "heading": "Overview of Covered Benefits",
+          "source_page": 1,
+          "quote": "This Policy provides coverage for Medically Necessary services that are not otherwise excluded.\nCovered Benefits include, but are not limited to:\n Physician office visits and specialist consultations\n Diagnostic imaging (e.g., ultrasound, CT, MRI)\n Outpatient procedures\n Emergency services\n Prescription drugs (Formulary-based)\nCoverage is subject to member eligibility, cost-sharing, Prior Authorization requirements, and all\nlimitations in this Policy."
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "4",
+          "heading": "Medical Necessity Standard",
+          "source_page": 2,
+          "quote": "A service is considered Medically Necessary if it is:\n Consistent with generally accepted standards of medical practice;\n Clinically appropriate in type, frequency, and setting;\n Not primarily for convenience of the member or provider;\n The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s3.1:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "3.1",
+          "heading": "Services Requiring Prior Authorization",
+          "source_page": 1,
+          "quote": "The following services require Prior Authorization:\n MRI (all anatomical regions)\n CT scans (except emergency)\n Elective inpatient admissions\n Durable medical equipment (DME) exceeding $500\n Specialty drugs listed as “PA Required” on the Formulary\nClaims for these services performed without approval may be denied unless retroactive authorization\nis granted."
+        },
+        {
+          "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "section": "6",
+          "heading": "Exclusions",
+          "source_page": 2,
+          "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+        }
+      ],
+      "claim_evidence": [
+        "insurer=HorizonCare",
+        "plan_name=Silver PPO 2500",
+        "member_status=active",
+        "claim_id=SYNTHETIC-CT;review_id=SERVICE-ct-review",
+        "duplicate_submission_id=SERVICE-ct-review",
+        "prior_claims_checked=0",
+        "claim_id=SYNTHETIC-CT",
+        "review_id=SERVICE-ct-review",
+        "procedure_code=CT",
+        "diagnosis_codes=('M54.5',)",
+        "coding_status=consistent",
+        "coding_source=synthetic-coding-reviewer",
+        "coding_source_version=None",
+        "coding_reason=Synthetic coding assessment.",
+        "claimed_amount=1200",
+        "high_value_threshold=5000",
+        "comparison=strictly_greater_than",
+        "service_profile=ct",
+        "diagnosis_support=unknown",
+        "medical_necessity=unknown",
+        "prior_authorization_required=None",
+        "screening_without_symptoms=ruled_out",
+        "screening_without_symptoms.source=synthetic-clinician",
+        "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+        "cosmetic_or_reconstructive=ruled_out",
+        "cosmetic_or_reconstructive.source=synthetic-clinician",
+        "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+        "experimental_or_investigational=ruled_out",
+        "experimental_or_investigational.source=synthetic-clinician",
+        "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+        "medically_unnecessary=ruled_out",
+        "medically_unnecessary.source=synthetic-clinician",
+        "medically_unnecessary.reason=Synthetic negative exclusion finding.",
+        "payment_status=determined",
+        "payment_source=synthetic-benefits-reviewer",
+        "payment_reason=Synthetic calculation.",
+        "payable_amount=900"
+      ],
+      "clinical_evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is true."
+        },
+        {
+          "document_id": "CALC",
+          "quote": "Synthetic trusted benefit calculation: payable amount 900 dollars."
+        }
+      ],
+      "missing_information": [],
+      "unresolved_information": [
+        "diagnosis_support",
+        "medical_necessity",
+        "emergency_service"
+      ],
+      "decision_trace": [
+        {
+          "rule_id": "policy_resolution",
+          "outcome": "satisfied",
+          "proposed_action": null,
+          "reason": "Insurer and plan matched to the selected policy revision.",
+          "policy_evidence": [],
+          "claim_evidence": [
+            "insurer=HorizonCare",
+            "plan_name=Silver PPO 2500"
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "inactive_plan",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "Inactive-plan denial does not apply; other checks remain.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "2",
+              "heading": "Member Eligibility and Plan Status",
+              "source_page": 1,
+              "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member’s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: “Plan inactive at time of service.”"
+            }
+          ],
+          "claim_evidence": [
+            "member_status=active"
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "duplicate_claim",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "No duplicate found in the supplied history; continue other review checks.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "7.1",
+              "heading": "Duplicate Claims",
+              "source_page": 3,
+              "quote": "A claim is considered duplicate if all of the following match:\n Member ID\n Provider NPI\n Date of service\n CPT / procedure code\n Billed amount\nDuplicate claims will be denied with reason: “Duplicate claim submission.”"
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "6",
+              "heading": "Exclusions",
+              "source_page": 2,
+              "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+            }
+          ],
+          "claim_evidence": [
+            "claim_id=SYNTHETIC-CT;review_id=SERVICE-ct-review",
+            "duplicate_submission_id=SERVICE-ct-review",
+            "prior_claims_checked=0"
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "coding_consistency",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "Trusted assessment reports consistent codes; other review checks remain.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "7.2",
+              "heading": "Coding Consistency",
+              "source_page": 3,
+              "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+            }
+          ],
+          "claim_evidence": [
+            "claim_id=SYNTHETIC-CT",
+            "review_id=SERVICE-ct-review",
+            "procedure_code=CT",
+            "diagnosis_codes=('M54.5',)",
+            "coding_status=consistent",
+            "coding_source=synthetic-coding-reviewer",
+            "coding_source_version=None",
+            "coding_reason=Synthetic coding assessment."
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "payment_documentation",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "Payment document presence checked; clinical evidence is assessed separately.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "5.2",
+              "heading": "Non-Covered Imaging",
+              "source_page": 2,
+              "quote": "Diagnostic imaging is not covered when:\n Requested for screening without symptoms, unless explicitly included as preventive care;\n Related to excluded procedures;\n Lacking documentation supporting Medical Necessity."
+            }
+          ],
+          "claim_evidence": [],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": "Task requirement: request missing essential information, including diagnosis codes.",
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "high_value_claim",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "Claimed amount does not exceed $5,000; other review checks remain.",
+          "policy_evidence": [],
+          "claim_evidence": [
+            "claimed_amount=1200",
+            "high_value_threshold=5000",
+            "comparison=strictly_greater_than"
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": "AI_Engineer_Take_Home_Task.pdf, page 2, Core workflow rules",
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "service_clinical_conditions",
+          "outcome": "unresolved",
+          "proposed_action": null,
+          "reason": "Service-specific clinical or benefit evidence requires review.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "1",
+              "heading": "Overview of Covered Benefits",
+              "source_page": 1,
+              "quote": "This Policy provides coverage for Medically Necessary services that are not otherwise excluded.\nCovered Benefits include, but are not limited to:\n Physician office visits and specialist consultations\n Diagnostic imaging (e.g., ultrasound, CT, MRI)\n Outpatient procedures\n Emergency services\n Prescription drugs (Formulary-based)\nCoverage is subject to member eligibility, cost-sharing, Prior Authorization requirements, and all\nlimitations in this Policy."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "4",
+              "heading": "Medical Necessity Standard",
+              "source_page": 2,
+              "quote": "A service is considered Medically Necessary if it is:\n Consistent with generally accepted standards of medical practice;\n Clinically appropriate in type, frequency, and setting;\n Not primarily for convenience of the member or provider;\n The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s3.1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "3.1",
+              "heading": "Services Requiring Prior Authorization",
+              "source_page": 1,
+              "quote": "The following services require Prior Authorization:\n MRI (all anatomical regions)\n CT scans (except emergency)\n Elective inpatient admissions\n Durable medical equipment (DME) exceeding $500\n Specialty drugs listed as “PA Required” on the Formulary\nClaims for these services performed without approval may be denied unless retroactive authorization\nis granted."
+            }
+          ],
+          "claim_evidence": [
+            "service_profile=ct",
+            "diagnosis_support=unknown",
+            "medical_necessity=unknown",
+            "prior_authorization_required=None"
+          ],
+          "missing_information": [],
+          "unresolved_information": [
+            "diagnosis_support",
+            "medical_necessity",
+            "emergency_service"
+          ],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "service_exclusions",
+          "outcome": "not_applicable",
+          "proposed_action": null,
+          "reason": "Assessed exclusions do not apply or their exceptions are supported; other review checks remain.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "5.2",
+              "heading": "Non-Covered Imaging",
+              "source_page": 2,
+              "quote": "Diagnostic imaging is not covered when:\n Requested for screening without symptoms, unless explicitly included as preventive care;\n Related to excluded procedures;\n Lacking documentation supporting Medical Necessity."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "6",
+              "heading": "Exclusions",
+              "source_page": 2,
+              "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+            }
+          ],
+          "claim_evidence": [
+            "claim_id=SYNTHETIC-CT",
+            "review_id=SERVICE-ct-review",
+            "screening_without_symptoms=ruled_out",
+            "screening_without_symptoms.source=synthetic-clinician",
+            "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+            "cosmetic_or_reconstructive=ruled_out",
+            "cosmetic_or_reconstructive.source=synthetic-clinician",
+            "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+            "experimental_or_investigational=ruled_out",
+            "experimental_or_investigational.source=synthetic-clinician",
+            "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+            "medically_unnecessary=ruled_out",
+            "medically_unnecessary.source=synthetic-clinician",
+            "medically_unnecessary.reason=Synthetic negative exclusion finding."
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": null,
+          "clinical_evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary. emergency_service is true."
+            }
+          ],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "payment_authorization",
+          "outcome": "unresolved",
+          "proposed_action": null,
+          "reason": "Authorization applicability needs evidence.",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s3.1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "3.1",
+              "heading": "Services Requiring Prior Authorization",
+              "source_page": 1,
+              "quote": "The following services require Prior Authorization:\n MRI (all anatomical regions)\n CT scans (except emergency)\n Elective inpatient admissions\n Durable medical equipment (DME) exceeding $500\n Specialty drugs listed as “PA Required” on the Formulary\nClaims for these services performed without approval may be denied unless retroactive authorization\nis granted."
+            }
+          ],
+          "claim_evidence": [
+            "prior_authorization_required=None"
+          ],
+          "missing_information": [],
+          "unresolved_information": [
+            "emergency_service"
+          ],
+          "rule_source": null,
+          "clinical_evidence": [],
+          "validated_payment_amount": null
+        },
+        {
+          "rule_id": "payment_amount",
+          "outcome": "satisfied",
+          "proposed_action": null,
+          "reason": "Supplied payment amount passed validation; remaining payment workflow checks still apply.",
+          "policy_evidence": [],
+          "claim_evidence": [
+            "claim_id=SYNTHETIC-CT",
+            "review_id=SERVICE-ct-review",
+            "claimed_amount=1200",
+            "payment_status=determined",
+            "payment_source=synthetic-benefits-reviewer",
+            "payment_reason=Synthetic calculation.",
+            "payable_amount=900"
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "rule_source": "User-approved MVP guard: a supplied payable amount must not exceed the billed amount.",
+          "clinical_evidence": [
+            {
+              "document_id": "CALC",
+              "quote": "Synthetic trusted benefit calculation: payable amount 900 dollars."
+            }
+          ],
+          "validated_payment_amount": "900"
+        }
+      ]
+    },
+    "mode": "stub",
+    "action": "route_to_senior_reviewer",
+    "arguments": {}
+  },
+  "advisory": {
+    "status": "validated_candidates",
+    "adapter_id": "gemini:gemini-3.5-flash-lite",
+    "prompt_version": "clinical-candidates-services-v2",
+    "request_id": "req_c3f7852a06d8f9a10ecd4922fa0a04a80ffd21e29058e38128658580e6b572ad",
+    "input_sha256": "c3f7852a06d8f9a10ecd4922fa0a04a80ffd21e29058e38128658580e6b572ad",
+    "candidates": {
+      "request_id": "req_c3f7852a06d8f9a10ecd4922fa0a04a80ffd21e29058e38128658580e6b572ad",
+      "findings": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "statement": "The clinical note states that the diagnosis is supported.",
+          "document_refs": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported;"
+            }
+          ],
+          "policy_refs": []
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "statement": "The clinical note states that the service is medically necessary and clinically appropriate, consistent with accepted standards, not for convenience, and the most cost-effective among comparable alternatives.",
+          "document_refs": [
+            {
+              "document_id": "NOTE",
+              "quote": "service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives."
+            }
+          ],
+          "policy_refs": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+              "quote": "A service is considered Medically Necessary if it is:\n Consistent with generally accepted standards of medical practice;\n Clinically appropriate in type, frequency, and setting;\n Not primarily for convenience of the member or provider;\n The most cost-effective option among clinically comparable alternatives."
+            }
+          ]
+        },
+        {
+          "topic": "emergency_service",
+          "status": "documented",
+          "statement": "The clinical note states that emergency_service is true.",
+          "document_refs": [
+            {
+              "document_id": "NOTE",
+              "quote": "emergency_service is true."
+            }
+          ],
+          "policy_refs": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s1:1",
+              "quote": "Emergency services"
+            }
+          ]
+        }
+      ]
+    },
+    "reason": "schema_and_provenance_validated_not_clinical_truth"
+  },
+  "persistence": {
+    "status": "not_requested"
+  }
+}

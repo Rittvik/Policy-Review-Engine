@@ -1,0 +1,53 @@
+{
+  "packet_sha256": "0ef96c4311f3c2a183de0cff81751180e3de6b15ae11ba78a37bf540371f1d25",
+  "reviewer_id": "synthetic-demo-reviewer",
+  "reviewed_at": "2026-10-09T11:19:51.701982+00:00",
+  "new_review_id": "CLINICAL-REVIEWED-1",
+  "confirmed_sources": true,
+  "carry_forward_assessments": [
+    "coding_assessment",
+    "treatment_history_applicability",
+    "exclusion_assessment"
+  ],
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "established",
+      "reason": "Synthetic demonstration: the clinician note explicitly supports the diagnosis.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary."
+        }
+      ]
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "established",
+      "reason": "Synthetic demonstration: the clinician note explicitly states MRI is medically necessary; this fixture assumes that supplied clinician assessment is trusted.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary."
+        }
+      ]
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "established",
+      "reason": "Synthetic demonstration: the treatment history explicitly records conservative treatment attempted.",
+      "evidence": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ]
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "unknown",
+      "reason": "No contraindication assessment is present. Absence is not a negative finding; the independently established attempted-treatment branch satisfies this alternative.",
+      "evidence": []
+    }
+  ]
+}

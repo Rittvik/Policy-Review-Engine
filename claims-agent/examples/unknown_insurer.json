@@ -1,0 +1,38 @@
+{
+  "claim_id": "SAMPLE-UNKNOWN-INSURER",
+  "review_id": "REVIEW-UNKNOWN-INSURER",
+  "insurer": "Unknown Synthetic Insurer",
+  "plan_name": "Silver PPO 2500",
+  "member_id": "MEMBER-1",
+  "claim_type": "pre_authorization",
+  "member_status": "active",
+  "service_date": "2025-03-10",
+  "service_location": "Synthetic clinic",
+  "provider_npi": "1234567890",
+  "procedure_code": "MRI-LUMBAR",
+  "procedure_description": null,
+  "diagnosis_codes": [
+    "M54.5"
+  ],
+  "claimed_amount": "1200",
+  "documents": [
+    {
+      "document_id": "NOTE",
+      "document_type": "clinical_note",
+      "status": "provided",
+      "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary.",
+      "submitted_in_review": null
+    }
+  ],
+  "notes": "",
+  "prior_authorization_approved": null,
+  "prior_claims": [],
+  "correction_declared": false,
+  "corrects_claim_id": null,
+  "coding_assessment": null,
+  "treatment_history_applicability": null,
+  "clinical_assessment": null,
+  "exclusion_assessment": null,
+  "payment_determination": null,
+  "authorization_assessment": null
+}

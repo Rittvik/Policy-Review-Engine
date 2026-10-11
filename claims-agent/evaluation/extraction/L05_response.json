@@ -1,0 +1,33 @@
+{
+  "request_id": "req_f6d4d5f75a2ad7ad00de393bb2b547d5fa3a3bbc55cbc6bb65b361f01d918b32",
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    }
+  ]
+}

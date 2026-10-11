@@ -1,0 +1,225 @@
+{
+  "claim_id": "SYNTHETIC-MRI-KNEE",
+  "review_id": "SERVICE-mri-knee-preauth",
+  "insurer": "HorizonCare",
+  "plan_name": "Silver PPO 2500",
+  "member_id": "MEMBER-1",
+  "claim_type": "pre_authorization",
+  "member_status": "active",
+  "service_date": "2025-03-10",
+  "service_location": "Synthetic clinic",
+  "provider_npi": "1234567890",
+  "procedure_code": "MRI-KNEE",
+  "procedure_description": null,
+  "diagnosis_codes": [
+    "M54.5"
+  ],
+  "claimed_amount": "1200",
+  "documents": [
+    {
+      "document_id": "NOTE",
+      "document_type": "clinical_note",
+      "status": "provided",
+      "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary.",
+      "submitted_in_review": null
+    },
+    {
+      "document_id": "HISTORY",
+      "document_type": "prior_treatment_history",
+      "status": "provided",
+      "text": "Synthetic treatment history: conservative treatment attempted.",
+      "submitted_in_review": null
+    }
+  ],
+  "notes": "",
+  "prior_authorization_approved": null,
+  "prior_claims": [],
+  "correction_declared": false,
+  "corrects_claim_id": null,
+  "coding_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-MRI-KNEE",
+      "review_id": "SERVICE-mri-knee-preauth",
+      "procedure_code": "MRI-KNEE",
+      "diagnosis_codes": [
+        "M54.5"
+      ]
+    },
+    "status": "consistent",
+    "source": "synthetic-coding-reviewer",
+    "reason": "Synthetic coding assessment.",
+    "source_version": null
+  },
+  "treatment_history_applicability": {
+    "request": {
+      "claim_id": "SYNTHETIC-MRI-KNEE",
+      "review_id": "SERVICE-mri-knee-preauth",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-KNEE",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "expected_service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "status": "required",
+    "source": "synthetic-clinician",
+    "reason": "Treatment history applicable in this synthetic case."
+  },
+  "clinical_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-MRI-KNEE",
+      "review_id": "SERVICE-mri-knee-preauth",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-KNEE",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "expected_service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "diagnosis_support": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "medical_necessity": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "conservative_treatment_attempted": {
+      "status": "established",
+      "source": "synthetic-service-reviewer",
+      "reason": "Explicit synthetic source assessment; not a real clinical determination.",
+      "evidence": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ]
+    },
+    "conservative_treatment_contraindicated": null
+  },
+  "exclusion_assessment": {
+    "request": {
+      "claim_id": "SYNTHETIC-MRI-KNEE",
+      "review_id": "SERVICE-mri-knee-preauth",
+      "claim_type": "pre_authorization",
+      "procedure_code": "MRI-KNEE",
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "expected_service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        }
+      ]
+    },
+    "screening_without_symptoms": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "cosmetic_or_reconstructive": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "required_by_trauma_or_congenital_anomaly": null,
+    "experimental_or_investigational": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "medically_unnecessary": {
+      "status": "ruled_out",
+      "source": "synthetic-clinician",
+      "reason": "Synthetic negative exclusion finding.",
+      "evidence": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; service medically necessary and clinically appropriate, consistent with accepted standards, not for convenience and most cost-effective among comparable alternatives. Symptomatic diagnostic request; not cosmetic, experimental or medically unnecessary."
+        }
+      ]
+    },
+    "preventive_coverage": null
+  },
+  "payment_determination": null,
+  "authorization_assessment": null
+}

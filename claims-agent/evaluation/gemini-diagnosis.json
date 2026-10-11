@@ -1,0 +1,88 @@
+{
+  "recorded_at": "2026-10-09T08:12:06.863398+00:00",
+  "status": "blocked_on_replacement_key",
+  "diagnostics": [
+    {
+      "model": "gemini-2.5-flash",
+      "http_status": 404,
+      "category": "model_unavailable_to_new_users"
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "http_status": 403,
+      "category": "provider_reports_key_leaked"
+    }
+  ],
+  "extraction": {
+    "id": "L01",
+    "mode": "gemini",
+    "expected": {
+      "id": "L01",
+      "input": "extraction/L01.json",
+      "document_ids": [
+        "NOTE1"
+      ],
+      "expected": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "The lumbar diagnosis is supported."
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "MRI is medically necessary."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "documented",
+          "anchors": [
+            {
+              "document_id": "NOTE1",
+              "quote": "Conservative treatment was attempted."
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "anchors": []
+        }
+      ],
+      "mock_response": "extraction/L01_response.json"
+    },
+    "input_sha256": "cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
+    "elapsed_seconds": 0.2679,
+    "result": {
+      "status": "unavailable",
+      "adapter_id": "gemini:gemini-3.8-flash",
+      "prompt_version": "clinical-candidates-v1",
+      "request_id": "req_cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
+      "input_sha256": "cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
+      "candidates": null,
+      "reason": "gemini_permission_denied"
+    },
+    "valid_response": false,
+    "correct_topics": 0,
+    "topic_count": 4,
+    "covered_anchors": 0,
+    "anchor_count": 3,
+    "passed": false
+  },
+  "resolution": {
+    "status": "resolved",
+    "model": "gemini-3.5-flash-lite",
+    "report": "gemini-20261009T082044064385Z.json",
+    "all_six_cases_passed": true
+  }
+}

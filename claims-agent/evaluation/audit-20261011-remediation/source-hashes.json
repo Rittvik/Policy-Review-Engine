@@ -1,0 +1,12 @@
+{
+  "src/claims_agent/trust.py": "5a7c728ba69c35a25fd06e6f0e1ed7f16410be99a13ac7c88c1814178616bdfd",
+  "src/claims_agent/llm.py": "988cf7291c0b4e0e75536f22c6fc491b3b3bd5f71d76cd15101005fb09a27dac",
+  "src/claims_agent/gemini.py": "35bc6ad8619e0e44be6d4a9df7c3d07612c530acba63fdc75423a8ccec468147",
+  "src/claims_agent/web.py": "b9c7ae5765e8fdfee9d18566c8c13ee8c3904ca316e27dd99c6231b9bc79e759",
+  "src/claims_agent/cli.py": "7ccc31aa4c9bae77cfd204d3d1cc22f92ddf7a3498ef0caf4215ca6fb85548b4",
+  "src/claims_agent/static/app.js": "5c6eb28a0b6d721ed8f44f3a9f19997bc9d557c09968875e636c09fc487f022a",
+  "scripts/audit_system.py": "f2eeee8a40771d8d9e2c5393c125d888b480da003d8951ec85179ccc398ffd35",
+  "scripts/audit_boundaries.py": "9be5389bb18356bd25ec323e0e94947b9ffd9738d61c90766f1b4350d9415114",
+  "tests/test_trust.py": "ec46b7548cdcf08616eeb378e75157f3483f75b5bfc1661ba8ed6fa3a1a5fab7",
+  "tests/test_live_extraction_remediation.py": "47d844b67ee769bc5f71bae7013e0d1f31640bd2025241c41562f1e29b0e1ae4"
+}

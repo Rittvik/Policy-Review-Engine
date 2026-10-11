@@ -1,0 +1,52 @@
+{
+  "framework": "arize-phoenix",
+  "version": "20.20.0",
+  "evaluated_at": "2026-10-11T14:44:46Z",
+  "total_cases": 38,
+  "metrics": {
+    "WayOutCompleteness": {
+      "mean_score": 0.9474,
+      "pass_rate_pct": 94.74,
+      "case_count": 38
+    },
+    "FastTrackAlignment": {
+      "mean_score": 1.0,
+      "pass_rate_pct": 100.0,
+      "case_count": 38
+    },
+    "AdversarialRobustness": {
+      "mean_score": 0.9474,
+      "pass_rate_pct": 94.74,
+      "case_count": 38
+    },
+    "AdverseNoticeFidelity": {
+      "mean_score": 1.0,
+      "pass_rate_pct": 100.0,
+      "case_count": 38
+    },
+    "HumanCalibration": {
+      "mean_score": 1.0,
+      "pass_rate_pct": 100.0,
+      "case_count": 38
+    },
+    "ProvenanceGrounding": {
+      "mean_score": 1.0,
+      "pass_rate_pct": 100.0,
+      "case_count": 38
+    },
+    "ActionCorrectness": {
+      "mean_score": 1.0,
+      "pass_rate_pct": 100.0,
+      "case_count": 38
+    }
+  },
+  "fast_track_distribution": {
+    "YELLOW": 16,
+    "GREEN": 14,
+    "RED": 8
+  },
+  "adverse_notice_distribution": {
+    "none": 32,
+    "denied": 6
+  }
+}

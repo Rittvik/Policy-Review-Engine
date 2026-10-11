@@ -1,0 +1,3026 @@
+{
+  "request": {
+    "claim": {
+      "claim_id": "CLM-1",
+      "review_id": "APPEAL-1",
+      "insurer": "HorizonCare",
+      "plan_name": "Silver PPO 2500",
+      "member_id": "MEMBER-1",
+      "claim_type": "appeal",
+      "member_status": "active",
+      "service_date": "2025-03-10",
+      "service_location": "Synthetic clinic",
+      "provider_npi": "1234567890",
+      "procedure_code": "MRI-LUMBAR",
+      "procedure_description": null,
+      "diagnosis_codes": [
+        "M54.5"
+      ],
+      "claimed_amount": "1200",
+      "documents": [
+        {
+          "document_id": "NOTE",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "HISTORY",
+          "document_type": "prior_treatment_history",
+          "status": "provided",
+          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "APPEAL",
+          "document_type": "written_appeal",
+          "status": "provided",
+          "text": "Synthetic written appeal for CLM-1.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "DENIAL",
+          "document_type": "denial_letter",
+          "status": "provided",
+          "text": "Synthetic denial notice dated 2024-01-01.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "RECEIPT",
+          "document_type": "appeal_receipt",
+          "status": "provided",
+          "text": "Synthetic appeal received 2024-06-29.",
+          "submitted_in_review": null
+        },
+        {
+          "document_id": "NEW",
+          "document_type": "clinical_note",
+          "status": "provided",
+          "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+          "submitted_in_review": null
+        }
+      ],
+      "notes": "",
+      "prior_authorization_approved": null,
+      "prior_claims": [],
+      "correction_declared": false,
+      "corrects_claim_id": null,
+      "coding_assessment": {
+        "request": {
+          "claim_id": "CLM-1",
+          "review_id": "APPEAL-1",
+          "procedure_code": "MRI-LUMBAR",
+          "diagnosis_codes": [
+            "M54.5"
+          ]
+        },
+        "status": "consistent",
+        "source": "synthetic-coding-reviewer",
+        "reason": "Synthetic coding assessment.",
+        "source_version": null
+      },
+      "treatment_history_applicability": {
+        "request": {
+          "claim_id": "CLM-1",
+          "review_id": "APPEAL-1",
+          "claim_type": "pre_authorization",
+          "procedure_code": "MRI-LUMBAR",
+          "diagnosis_codes": [
+            "M54.5"
+          ],
+          "expected_service_date": "2025-03-10",
+          "service_location": "Synthetic clinic",
+          "documents": [
+            {
+              "document_id": "NOTE",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "HISTORY",
+              "document_type": "prior_treatment_history",
+              "status": "provided",
+              "text": "Synthetic treatment history: conservative treatment attempted.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "APPEAL",
+              "document_type": "written_appeal",
+              "status": "provided",
+              "text": "Synthetic written appeal for CLM-1.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "DENIAL",
+              "document_type": "denial_letter",
+              "status": "provided",
+              "text": "Synthetic denial notice dated 2024-01-01.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "RECEIPT",
+              "document_type": "appeal_receipt",
+              "status": "provided",
+              "text": "Synthetic appeal received 2024-06-29.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "NEW",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+              "submitted_in_review": null
+            }
+          ]
+        },
+        "status": "required",
+        "source": "synthetic-clinician",
+        "reason": "Treatment history applicable in this synthetic case."
+      },
+      "clinical_assessment": {
+        "request": {
+          "claim_id": "CLM-1",
+          "review_id": "APPEAL-1",
+          "claim_type": "pre_authorization",
+          "procedure_code": "MRI-LUMBAR",
+          "diagnosis_codes": [
+            "M54.5"
+          ],
+          "expected_service_date": "2025-03-10",
+          "service_location": "Synthetic clinic",
+          "documents": [
+            {
+              "document_id": "NOTE",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "HISTORY",
+              "document_type": "prior_treatment_history",
+              "status": "provided",
+              "text": "Synthetic treatment history: conservative treatment attempted.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "APPEAL",
+              "document_type": "written_appeal",
+              "status": "provided",
+              "text": "Synthetic written appeal for CLM-1.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "DENIAL",
+              "document_type": "denial_letter",
+              "status": "provided",
+              "text": "Synthetic denial notice dated 2024-01-01.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "RECEIPT",
+              "document_type": "appeal_receipt",
+              "status": "provided",
+              "text": "Synthetic appeal received 2024-06-29.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "NEW",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+              "submitted_in_review": null
+            }
+          ]
+        },
+        "diagnosis_support": {
+          "status": "established",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic finding for controller testing.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "medical_necessity": {
+          "status": "established",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic finding for controller testing.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "conservative_treatment_attempted": {
+          "status": "established",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic finding for controller testing.",
+          "evidence": [
+            {
+              "document_id": "HISTORY",
+              "quote": "Synthetic treatment history: conservative treatment attempted."
+            }
+          ]
+        },
+        "conservative_treatment_contraindicated": null
+      },
+      "exclusion_assessment": {
+        "request": {
+          "claim_id": "CLM-1",
+          "review_id": "APPEAL-1",
+          "claim_type": "pre_authorization",
+          "procedure_code": "MRI-LUMBAR",
+          "diagnosis_codes": [
+            "M54.5"
+          ],
+          "expected_service_date": "2025-03-10",
+          "service_location": "Synthetic clinic",
+          "documents": [
+            {
+              "document_id": "NOTE",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "HISTORY",
+              "document_type": "prior_treatment_history",
+              "status": "provided",
+              "text": "Synthetic treatment history: conservative treatment attempted.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "APPEAL",
+              "document_type": "written_appeal",
+              "status": "provided",
+              "text": "Synthetic written appeal for CLM-1.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "DENIAL",
+              "document_type": "denial_letter",
+              "status": "provided",
+              "text": "Synthetic denial notice dated 2024-01-01.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "RECEIPT",
+              "document_type": "appeal_receipt",
+              "status": "provided",
+              "text": "Synthetic appeal received 2024-06-29.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "NEW",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+              "submitted_in_review": null
+            }
+          ]
+        },
+        "screening_without_symptoms": {
+          "status": "ruled_out",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic negative exclusion finding.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "cosmetic_or_reconstructive": {
+          "status": "ruled_out",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic negative exclusion finding.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "required_by_trauma_or_congenital_anomaly": null,
+        "experimental_or_investigational": {
+          "status": "ruled_out",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic negative exclusion finding.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "medically_unnecessary": {
+          "status": "ruled_out",
+          "source": "synthetic-clinician",
+          "reason": "Synthetic negative exclusion finding.",
+          "evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+            }
+          ]
+        },
+        "preventive_coverage": null
+      },
+      "payment_determination": null,
+      "authorization_assessment": null
+    },
+    "prior_review": {
+      "claim": {
+        "claim_id": "CLM-1",
+        "review_id": "DENIAL-1",
+        "insurer": "HorizonCare",
+        "plan_name": "Silver PPO 2500",
+        "member_id": "MEMBER-1",
+        "claim_type": "pre_authorization",
+        "member_status": "active",
+        "service_date": "2025-03-10",
+        "service_location": "Synthetic clinic",
+        "provider_npi": "1234567890",
+        "procedure_code": "MRI-LUMBAR",
+        "procedure_description": null,
+        "diagnosis_codes": [
+          "M54.5"
+        ],
+        "claimed_amount": "1200",
+        "documents": [
+          {
+            "document_id": "NOTE",
+            "document_type": "clinical_note",
+            "status": "provided",
+            "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "HISTORY",
+            "document_type": "prior_treatment_history",
+            "status": "provided",
+            "text": "Synthetic treatment history: conservative treatment attempted.",
+            "submitted_in_review": null
+          }
+        ],
+        "notes": "",
+        "prior_authorization_approved": null,
+        "prior_claims": [],
+        "correction_declared": false,
+        "corrects_claim_id": null,
+        "coding_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ]
+          },
+          "status": "consistent",
+          "source": "synthetic-coding-reviewer",
+          "reason": "Synthetic coding assessment.",
+          "source_version": null
+        },
+        "treatment_history_applicability": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "status": "required",
+          "source": "synthetic-clinician",
+          "reason": "Treatment history applicable in this synthetic case."
+        },
+        "clinical_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "diagnosis_support": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "medical_necessity": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "conservative_treatment_attempted": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "HISTORY",
+                "quote": "Synthetic treatment history: conservative treatment attempted."
+              }
+            ]
+          },
+          "conservative_treatment_contraindicated": null
+        },
+        "exclusion_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "screening_without_symptoms": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "cosmetic_or_reconstructive": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "required_by_trauma_or_congenital_anomaly": null,
+          "experimental_or_investigational": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "medically_unnecessary": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              }
+            ]
+          },
+          "preventive_coverage": null
+        },
+        "payment_determination": null,
+        "authorization_assessment": null
+      },
+      "decision": {
+        "context": {
+          "claim_id": "CLM-1",
+          "review_id": "DENIAL-1",
+          "reason": "Service is established as experimental or investigational.",
+          "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+          "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+          "policy_evidence": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "2",
+              "heading": "Member Eligibility and Plan Status",
+              "source_page": 1,
+              "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "7.1",
+              "heading": "Duplicate Claims",
+              "source_page": 3,
+              "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "6",
+              "heading": "Exclusions",
+              "source_page": 2,
+              "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "7.2",
+              "heading": "Coding Consistency",
+              "source_page": 3,
+              "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "3.2",
+              "heading": "Documentation Required",
+              "source_page": 2,
+              "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "5.1",
+              "heading": "MRI Coverage",
+              "source_page": 2,
+              "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "4",
+              "heading": "Medical Necessity Standard",
+              "source_page": 2,
+              "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "5.2",
+              "heading": "Non-Covered Imaging",
+              "source_page": 2,
+              "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+            },
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+              "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+              "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+              "section": "6",
+              "heading": "Exclusions",
+              "source_page": 2,
+              "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+            }
+          ],
+          "claim_evidence": [
+            "insurer=HorizonCare",
+            "plan_name=Silver PPO 2500",
+            "member_status=active",
+            "claim_id=CLM-1;review_id=DENIAL-1",
+            "duplicate_submission_id=DENIAL-1",
+            "prior_claims_checked=0",
+            "claim_id=CLM-1",
+            "review_id=DENIAL-1",
+            "procedure_code=MRI-LUMBAR",
+            "diagnosis_codes=('M54.5',)",
+            "coding_status=consistent",
+            "coding_source=synthetic-coding-reviewer",
+            "coding_source_version=None",
+            "coding_reason=Synthetic coding assessment.",
+            "expected_service_date=2025-03-10",
+            "service_location=Synthetic clinic",
+            "document=NOTE;type=clinical_note;status=provided",
+            "treatment_history_applicability=required",
+            "applicability_source=synthetic-clinician",
+            "applicability_reason=Treatment history applicable in this synthetic case.",
+            "document=HISTORY;type=prior_treatment_history;status=provided",
+            "claimed_amount=1200",
+            "high_value_threshold=5000",
+            "comparison=strictly_greater_than",
+            "diagnosis_support=established",
+            "diagnosis_support.source=synthetic-clinician",
+            "diagnosis_support.reason=Synthetic finding for controller testing.",
+            "medical_necessity=established",
+            "medical_necessity.source=synthetic-clinician",
+            "medical_necessity.reason=Synthetic finding for controller testing.",
+            "conservative_treatment_attempted=established",
+            "conservative_treatment_attempted.source=synthetic-clinician",
+            "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+            "conservative_treatment_contraindicated=unknown",
+            "screening_without_symptoms=ruled_out",
+            "screening_without_symptoms.source=synthetic-clinician",
+            "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+            "cosmetic_or_reconstructive=ruled_out",
+            "cosmetic_or_reconstructive.source=synthetic-clinician",
+            "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+            "experimental_or_investigational=established",
+            "experimental_or_investigational.source=synthetic-clinician",
+            "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+            "medically_unnecessary=ruled_out",
+            "medically_unnecessary.source=synthetic-clinician",
+            "medically_unnecessary.reason=Synthetic negative exclusion finding."
+          ],
+          "clinical_evidence": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+            },
+            {
+              "document_id": "HISTORY",
+              "quote": "Synthetic treatment history: conservative treatment attempted."
+            }
+          ],
+          "missing_information": [],
+          "unresolved_information": [],
+          "decision_trace": [
+            {
+              "rule_id": "policy_resolution",
+              "outcome": "satisfied",
+              "proposed_action": null,
+              "reason": "Insurer and plan matched to the selected policy revision.",
+              "policy_evidence": [],
+              "claim_evidence": [
+                "insurer=HorizonCare",
+                "plan_name=Silver PPO 2500"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "inactive_plan",
+              "outcome": "not_applicable",
+              "proposed_action": null,
+              "reason": "Inactive-plan denial does not apply; other checks remain.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "2",
+                  "heading": "Member Eligibility and Plan Status",
+                  "source_page": 1,
+                  "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+                }
+              ],
+              "claim_evidence": [
+                "member_status=active"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "duplicate_claim",
+              "outcome": "not_applicable",
+              "proposed_action": null,
+              "reason": "No duplicate found in the supplied history; continue other review checks.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "7.1",
+                  "heading": "Duplicate Claims",
+                  "source_page": 3,
+                  "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+                },
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "6",
+                  "heading": "Exclusions",
+                  "source_page": 2,
+                  "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                }
+              ],
+              "claim_evidence": [
+                "claim_id=CLM-1;review_id=DENIAL-1",
+                "duplicate_submission_id=DENIAL-1",
+                "prior_claims_checked=0"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "coding_consistency",
+              "outcome": "not_applicable",
+              "proposed_action": null,
+              "reason": "Trusted assessment reports consistent codes; other review checks remain.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "7.2",
+                  "heading": "Coding Consistency",
+                  "source_page": 3,
+                  "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+                }
+              ],
+              "claim_evidence": [
+                "claim_id=CLM-1",
+                "review_id=DENIAL-1",
+                "procedure_code=MRI-LUMBAR",
+                "diagnosis_codes=('M54.5',)",
+                "coding_status=consistent",
+                "coding_source=synthetic-coding-reviewer",
+                "coding_source_version=None",
+                "coding_reason=Synthetic coding assessment."
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "pre_authorization_documentation",
+              "outcome": "not_applicable",
+              "proposed_action": null,
+              "reason": "Required items are present; clinical evidence sufficiency and coverage still require assessment.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "3.2",
+                  "heading": "Documentation Required",
+                  "source_page": 2,
+                  "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+                }
+              ],
+              "claim_evidence": [
+                "claim_id=CLM-1",
+                "review_id=DENIAL-1",
+                "diagnosis_codes=('M54.5',)",
+                "expected_service_date=2025-03-10",
+                "service_location=Synthetic clinic",
+                "document=NOTE;type=clinical_note;status=provided",
+                "treatment_history_applicability=required",
+                "applicability_source=synthetic-clinician",
+                "applicability_reason=Treatment history applicable in this synthetic case.",
+                "document=HISTORY;type=prior_treatment_history;status=provided"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "high_value_claim",
+              "outcome": "not_applicable",
+              "proposed_action": null,
+              "reason": "Claimed amount does not exceed $5,000; other review checks remain.",
+              "policy_evidence": [],
+              "claim_evidence": [
+                "claimed_amount=1200",
+                "high_value_threshold=5000",
+                "comparison=strictly_greater_than"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": "AI_Engineer_Take_Home_Task.pdf, page 2, Core workflow rules",
+              "clinical_evidence": [],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "mri_clinical_conditions",
+              "outcome": "satisfied",
+              "proposed_action": null,
+              "reason": "Supported clinical conditions are established; remaining workflow and exclusion checks must precede approval.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "5.1",
+                  "heading": "MRI Coverage",
+                  "source_page": 2,
+                  "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+                },
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "4",
+                  "heading": "Medical Necessity Standard",
+                  "source_page": 2,
+                  "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+                }
+              ],
+              "claim_evidence": [
+                "claim_id=CLM-1",
+                "review_id=DENIAL-1",
+                "procedure_code=MRI-LUMBAR",
+                "diagnosis_codes=('M54.5',)",
+                "diagnosis_support=established",
+                "diagnosis_support.source=synthetic-clinician",
+                "diagnosis_support.reason=Synthetic finding for controller testing.",
+                "medical_necessity=established",
+                "medical_necessity.source=synthetic-clinician",
+                "medical_necessity.reason=Synthetic finding for controller testing.",
+                "conservative_treatment_attempted=established",
+                "conservative_treatment_attempted.source=synthetic-clinician",
+                "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+                "conservative_treatment_contraindicated=unknown"
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                },
+                {
+                  "document_id": "HISTORY",
+                  "quote": "Synthetic treatment history: conservative treatment attempted."
+                }
+              ],
+              "validated_payment_amount": null
+            },
+            {
+              "rule_id": "mri_exclusions",
+              "outcome": "matched",
+              "proposed_action": "deny_claim",
+              "reason": "Service is established as experimental or investigational.",
+              "policy_evidence": [
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "5.2",
+                  "heading": "Non-Covered Imaging",
+                  "source_page": 2,
+                  "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+                },
+                {
+                  "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                  "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                  "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                  "section": "6",
+                  "heading": "Exclusions",
+                  "source_page": 2,
+                  "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                }
+              ],
+              "claim_evidence": [
+                "claim_id=CLM-1",
+                "review_id=DENIAL-1",
+                "screening_without_symptoms=ruled_out",
+                "screening_without_symptoms.source=synthetic-clinician",
+                "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+                "cosmetic_or_reconstructive=ruled_out",
+                "cosmetic_or_reconstructive.source=synthetic-clinician",
+                "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+                "experimental_or_investigational=established",
+                "experimental_or_investigational.source=synthetic-clinician",
+                "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+                "medically_unnecessary=ruled_out",
+                "medically_unnecessary.source=synthetic-clinician",
+                "medically_unnecessary.reason=Synthetic negative exclusion finding."
+              ],
+              "missing_information": [],
+              "unresolved_information": [],
+              "rule_source": null,
+              "clinical_evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ],
+              "validated_payment_amount": null
+            }
+          ]
+        },
+        "mode": "stub",
+        "action": "deny_claim",
+        "arguments": {}
+      },
+      "recorded_at": "2026-10-08T22:10:55.818426Z",
+      "previous_review_id": null,
+      "supplemental_input_json": null
+    },
+    "claim_reference": "CLM-1"
+  },
+  "timing_assessment": {
+    "request": {
+      "claim": {
+        "claim_id": "CLM-1",
+        "review_id": "APPEAL-1",
+        "insurer": "HorizonCare",
+        "plan_name": "Silver PPO 2500",
+        "member_id": "MEMBER-1",
+        "claim_type": "appeal",
+        "member_status": "active",
+        "service_date": "2025-03-10",
+        "service_location": "Synthetic clinic",
+        "provider_npi": "1234567890",
+        "procedure_code": "MRI-LUMBAR",
+        "procedure_description": null,
+        "diagnosis_codes": [
+          "M54.5"
+        ],
+        "claimed_amount": "1200",
+        "documents": [
+          {
+            "document_id": "NOTE",
+            "document_type": "clinical_note",
+            "status": "provided",
+            "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "HISTORY",
+            "document_type": "prior_treatment_history",
+            "status": "provided",
+            "text": "Synthetic treatment history: conservative treatment attempted.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "APPEAL",
+            "document_type": "written_appeal",
+            "status": "provided",
+            "text": "Synthetic written appeal for CLM-1.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "DENIAL",
+            "document_type": "denial_letter",
+            "status": "provided",
+            "text": "Synthetic denial notice dated 2024-01-01.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "RECEIPT",
+            "document_type": "appeal_receipt",
+            "status": "provided",
+            "text": "Synthetic appeal received 2024-06-29.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "NEW",
+            "document_type": "clinical_note",
+            "status": "provided",
+            "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+            "submitted_in_review": null
+          }
+        ],
+        "notes": "",
+        "prior_authorization_approved": null,
+        "prior_claims": [],
+        "correction_declared": false,
+        "corrects_claim_id": null,
+        "coding_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ]
+          },
+          "status": "consistent",
+          "source": "synthetic-coding-reviewer",
+          "reason": "Synthetic coding assessment.",
+          "source_version": null
+        },
+        "treatment_history_applicability": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "status": "required",
+          "source": "synthetic-clinician",
+          "reason": "Treatment history applicable in this synthetic case."
+        },
+        "clinical_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "diagnosis_support": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "medical_necessity": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "conservative_treatment_attempted": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "HISTORY",
+                "quote": "Synthetic treatment history: conservative treatment attempted."
+              }
+            ]
+          },
+          "conservative_treatment_contraindicated": null
+        },
+        "exclusion_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "screening_without_symptoms": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "cosmetic_or_reconstructive": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "required_by_trauma_or_congenital_anomaly": null,
+          "experimental_or_investigational": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "medically_unnecessary": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "preventive_coverage": null
+        },
+        "payment_determination": null,
+        "authorization_assessment": null
+      },
+      "prior_review": {
+        "claim": {
+          "claim_id": "CLM-1",
+          "review_id": "DENIAL-1",
+          "insurer": "HorizonCare",
+          "plan_name": "Silver PPO 2500",
+          "member_id": "MEMBER-1",
+          "claim_type": "pre_authorization",
+          "member_status": "active",
+          "service_date": "2025-03-10",
+          "service_location": "Synthetic clinic",
+          "provider_npi": "1234567890",
+          "procedure_code": "MRI-LUMBAR",
+          "procedure_description": null,
+          "diagnosis_codes": [
+            "M54.5"
+          ],
+          "claimed_amount": "1200",
+          "documents": [
+            {
+              "document_id": "NOTE",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "HISTORY",
+              "document_type": "prior_treatment_history",
+              "status": "provided",
+              "text": "Synthetic treatment history: conservative treatment attempted.",
+              "submitted_in_review": null
+            }
+          ],
+          "notes": "",
+          "prior_authorization_approved": null,
+          "prior_claims": [],
+          "correction_declared": false,
+          "corrects_claim_id": null,
+          "coding_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ]
+            },
+            "status": "consistent",
+            "source": "synthetic-coding-reviewer",
+            "reason": "Synthetic coding assessment.",
+            "source_version": null
+          },
+          "treatment_history_applicability": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "status": "required",
+            "source": "synthetic-clinician",
+            "reason": "Treatment history applicable in this synthetic case."
+          },
+          "clinical_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "diagnosis_support": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "medical_necessity": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "conservative_treatment_attempted": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "HISTORY",
+                  "quote": "Synthetic treatment history: conservative treatment attempted."
+                }
+              ]
+            },
+            "conservative_treatment_contraindicated": null
+          },
+          "exclusion_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "screening_without_symptoms": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "cosmetic_or_reconstructive": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "required_by_trauma_or_congenital_anomaly": null,
+            "experimental_or_investigational": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "medically_unnecessary": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "preventive_coverage": null
+          },
+          "payment_determination": null,
+          "authorization_assessment": null
+        },
+        "decision": {
+          "context": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "reason": "Service is established as experimental or investigational.",
+            "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+            "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+            "policy_evidence": [
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "2",
+                "heading": "Member Eligibility and Plan Status",
+                "source_page": 1,
+                "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "7.1",
+                "heading": "Duplicate Claims",
+                "source_page": 3,
+                "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "6",
+                "heading": "Exclusions",
+                "source_page": 2,
+                "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "7.2",
+                "heading": "Coding Consistency",
+                "source_page": 3,
+                "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "3.2",
+                "heading": "Documentation Required",
+                "source_page": 2,
+                "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "5.1",
+                "heading": "MRI Coverage",
+                "source_page": 2,
+                "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "4",
+                "heading": "Medical Necessity Standard",
+                "source_page": 2,
+                "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "5.2",
+                "heading": "Non-Covered Imaging",
+                "source_page": 2,
+                "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "6",
+                "heading": "Exclusions",
+                "source_page": 2,
+                "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+              }
+            ],
+            "claim_evidence": [
+              "insurer=HorizonCare",
+              "plan_name=Silver PPO 2500",
+              "member_status=active",
+              "claim_id=CLM-1;review_id=DENIAL-1",
+              "duplicate_submission_id=DENIAL-1",
+              "prior_claims_checked=0",
+              "claim_id=CLM-1",
+              "review_id=DENIAL-1",
+              "procedure_code=MRI-LUMBAR",
+              "diagnosis_codes=('M54.5',)",
+              "coding_status=consistent",
+              "coding_source=synthetic-coding-reviewer",
+              "coding_source_version=None",
+              "coding_reason=Synthetic coding assessment.",
+              "expected_service_date=2025-03-10",
+              "service_location=Synthetic clinic",
+              "document=NOTE;type=clinical_note;status=provided",
+              "treatment_history_applicability=required",
+              "applicability_source=synthetic-clinician",
+              "applicability_reason=Treatment history applicable in this synthetic case.",
+              "document=HISTORY;type=prior_treatment_history;status=provided",
+              "claimed_amount=1200",
+              "high_value_threshold=5000",
+              "comparison=strictly_greater_than",
+              "diagnosis_support=established",
+              "diagnosis_support.source=synthetic-clinician",
+              "diagnosis_support.reason=Synthetic finding for controller testing.",
+              "medical_necessity=established",
+              "medical_necessity.source=synthetic-clinician",
+              "medical_necessity.reason=Synthetic finding for controller testing.",
+              "conservative_treatment_attempted=established",
+              "conservative_treatment_attempted.source=synthetic-clinician",
+              "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+              "conservative_treatment_contraindicated=unknown",
+              "screening_without_symptoms=ruled_out",
+              "screening_without_symptoms.source=synthetic-clinician",
+              "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+              "cosmetic_or_reconstructive=ruled_out",
+              "cosmetic_or_reconstructive.source=synthetic-clinician",
+              "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+              "experimental_or_investigational=established",
+              "experimental_or_investigational.source=synthetic-clinician",
+              "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+              "medically_unnecessary=ruled_out",
+              "medically_unnecessary.source=synthetic-clinician",
+              "medically_unnecessary.reason=Synthetic negative exclusion finding."
+            ],
+            "clinical_evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              },
+              {
+                "document_id": "HISTORY",
+                "quote": "Synthetic treatment history: conservative treatment attempted."
+              }
+            ],
+            "missing_information": [],
+            "unresolved_information": [],
+            "decision_trace": [
+              {
+                "rule_id": "policy_resolution",
+                "outcome": "satisfied",
+                "proposed_action": null,
+                "reason": "Insurer and plan matched to the selected policy revision.",
+                "policy_evidence": [],
+                "claim_evidence": [
+                  "insurer=HorizonCare",
+                  "plan_name=Silver PPO 2500"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "inactive_plan",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Inactive-plan denial does not apply; other checks remain.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "2",
+                    "heading": "Member Eligibility and Plan Status",
+                    "source_page": 1,
+                    "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+                  }
+                ],
+                "claim_evidence": [
+                  "member_status=active"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "duplicate_claim",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "No duplicate found in the supplied history; continue other review checks.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "7.1",
+                    "heading": "Duplicate Claims",
+                    "source_page": 3,
+                    "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "6",
+                    "heading": "Exclusions",
+                    "source_page": 2,
+                    "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1;review_id=DENIAL-1",
+                  "duplicate_submission_id=DENIAL-1",
+                  "prior_claims_checked=0"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "coding_consistency",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Trusted assessment reports consistent codes; other review checks remain.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "7.2",
+                    "heading": "Coding Consistency",
+                    "source_page": 3,
+                    "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "procedure_code=MRI-LUMBAR",
+                  "diagnosis_codes=('M54.5',)",
+                  "coding_status=consistent",
+                  "coding_source=synthetic-coding-reviewer",
+                  "coding_source_version=None",
+                  "coding_reason=Synthetic coding assessment."
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "pre_authorization_documentation",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Required items are present; clinical evidence sufficiency and coverage still require assessment.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "3.2",
+                    "heading": "Documentation Required",
+                    "source_page": 2,
+                    "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "diagnosis_codes=('M54.5',)",
+                  "expected_service_date=2025-03-10",
+                  "service_location=Synthetic clinic",
+                  "document=NOTE;type=clinical_note;status=provided",
+                  "treatment_history_applicability=required",
+                  "applicability_source=synthetic-clinician",
+                  "applicability_reason=Treatment history applicable in this synthetic case.",
+                  "document=HISTORY;type=prior_treatment_history;status=provided"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "high_value_claim",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Claimed amount does not exceed $5,000; other review checks remain.",
+                "policy_evidence": [],
+                "claim_evidence": [
+                  "claimed_amount=1200",
+                  "high_value_threshold=5000",
+                  "comparison=strictly_greater_than"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": "AI_Engineer_Take_Home_Task.pdf, page 2, Core workflow rules",
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "mri_clinical_conditions",
+                "outcome": "satisfied",
+                "proposed_action": null,
+                "reason": "Supported clinical conditions are established; remaining workflow and exclusion checks must precede approval.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "5.1",
+                    "heading": "MRI Coverage",
+                    "source_page": 2,
+                    "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "4",
+                    "heading": "Medical Necessity Standard",
+                    "source_page": 2,
+                    "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "procedure_code=MRI-LUMBAR",
+                  "diagnosis_codes=('M54.5',)",
+                  "diagnosis_support=established",
+                  "diagnosis_support.source=synthetic-clinician",
+                  "diagnosis_support.reason=Synthetic finding for controller testing.",
+                  "medical_necessity=established",
+                  "medical_necessity.source=synthetic-clinician",
+                  "medical_necessity.reason=Synthetic finding for controller testing.",
+                  "conservative_treatment_attempted=established",
+                  "conservative_treatment_attempted.source=synthetic-clinician",
+                  "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+                  "conservative_treatment_contraindicated=unknown"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [
+                  {
+                    "document_id": "NOTE",
+                    "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                  },
+                  {
+                    "document_id": "HISTORY",
+                    "quote": "Synthetic treatment history: conservative treatment attempted."
+                  }
+                ],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "mri_exclusions",
+                "outcome": "matched",
+                "proposed_action": "deny_claim",
+                "reason": "Service is established as experimental or investigational.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "5.2",
+                    "heading": "Non-Covered Imaging",
+                    "source_page": 2,
+                    "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "6",
+                    "heading": "Exclusions",
+                    "source_page": 2,
+                    "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "screening_without_symptoms=ruled_out",
+                  "screening_without_symptoms.source=synthetic-clinician",
+                  "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+                  "cosmetic_or_reconstructive=ruled_out",
+                  "cosmetic_or_reconstructive.source=synthetic-clinician",
+                  "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+                  "experimental_or_investigational=established",
+                  "experimental_or_investigational.source=synthetic-clinician",
+                  "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+                  "medically_unnecessary=ruled_out",
+                  "medically_unnecessary.source=synthetic-clinician",
+                  "medically_unnecessary.reason=Synthetic negative exclusion finding."
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [
+                  {
+                    "document_id": "NOTE",
+                    "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                  }
+                ],
+                "validated_payment_amount": null
+              }
+            ]
+          },
+          "mode": "stub",
+          "action": "deny_claim",
+          "arguments": {}
+        },
+        "recorded_at": "2026-10-08T22:10:55.818426Z",
+        "previous_review_id": null,
+        "supplemental_input_json": null
+      },
+      "claim_reference": "CLM-1"
+    },
+    "denial_notice": {
+      "status": "established",
+      "value": "2024-01-01",
+      "source": "synthetic-intake",
+      "reason": "Synthetic notice date.",
+      "evidence": [
+        {
+          "document_id": "DENIAL",
+          "quote": "Synthetic denial notice dated 2024-01-01."
+        }
+      ]
+    },
+    "appeal_received": {
+      "status": "established",
+      "value": "2024-06-29",
+      "source": "synthetic-intake",
+      "reason": "Synthetic receipt date.",
+      "evidence": [
+        {
+          "document_id": "RECEIPT",
+          "quote": "Synthetic appeal received 2024-06-29."
+        }
+      ]
+    }
+  },
+  "evidence_assessment": {
+    "request": {
+      "claim": {
+        "claim_id": "CLM-1",
+        "review_id": "APPEAL-1",
+        "insurer": "HorizonCare",
+        "plan_name": "Silver PPO 2500",
+        "member_id": "MEMBER-1",
+        "claim_type": "appeal",
+        "member_status": "active",
+        "service_date": "2025-03-10",
+        "service_location": "Synthetic clinic",
+        "provider_npi": "1234567890",
+        "procedure_code": "MRI-LUMBAR",
+        "procedure_description": null,
+        "diagnosis_codes": [
+          "M54.5"
+        ],
+        "claimed_amount": "1200",
+        "documents": [
+          {
+            "document_id": "NOTE",
+            "document_type": "clinical_note",
+            "status": "provided",
+            "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "HISTORY",
+            "document_type": "prior_treatment_history",
+            "status": "provided",
+            "text": "Synthetic treatment history: conservative treatment attempted.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "APPEAL",
+            "document_type": "written_appeal",
+            "status": "provided",
+            "text": "Synthetic written appeal for CLM-1.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "DENIAL",
+            "document_type": "denial_letter",
+            "status": "provided",
+            "text": "Synthetic denial notice dated 2024-01-01.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "RECEIPT",
+            "document_type": "appeal_receipt",
+            "status": "provided",
+            "text": "Synthetic appeal received 2024-06-29.",
+            "submitted_in_review": null
+          },
+          {
+            "document_id": "NEW",
+            "document_type": "clinical_note",
+            "status": "provided",
+            "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+            "submitted_in_review": null
+          }
+        ],
+        "notes": "",
+        "prior_authorization_approved": null,
+        "prior_claims": [],
+        "correction_declared": false,
+        "corrects_claim_id": null,
+        "coding_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ]
+          },
+          "status": "consistent",
+          "source": "synthetic-coding-reviewer",
+          "reason": "Synthetic coding assessment.",
+          "source_version": null
+        },
+        "treatment_history_applicability": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "status": "required",
+          "source": "synthetic-clinician",
+          "reason": "Treatment history applicable in this synthetic case."
+        },
+        "clinical_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "diagnosis_support": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "medical_necessity": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "conservative_treatment_attempted": {
+            "status": "established",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic finding for controller testing.",
+            "evidence": [
+              {
+                "document_id": "HISTORY",
+                "quote": "Synthetic treatment history: conservative treatment attempted."
+              }
+            ]
+          },
+          "conservative_treatment_contraindicated": null
+        },
+        "exclusion_assessment": {
+          "request": {
+            "claim_id": "CLM-1",
+            "review_id": "APPEAL-1",
+            "claim_type": "pre_authorization",
+            "procedure_code": "MRI-LUMBAR",
+            "diagnosis_codes": [
+              "M54.5"
+            ],
+            "expected_service_date": "2025-03-10",
+            "service_location": "Synthetic clinic",
+            "documents": [
+              {
+                "document_id": "NOTE",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "HISTORY",
+                "document_type": "prior_treatment_history",
+                "status": "provided",
+                "text": "Synthetic treatment history: conservative treatment attempted.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "APPEAL",
+                "document_type": "written_appeal",
+                "status": "provided",
+                "text": "Synthetic written appeal for CLM-1.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "DENIAL",
+                "document_type": "denial_letter",
+                "status": "provided",
+                "text": "Synthetic denial notice dated 2024-01-01.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "RECEIPT",
+                "document_type": "appeal_receipt",
+                "status": "provided",
+                "text": "Synthetic appeal received 2024-06-29.",
+                "submitted_in_review": null
+              },
+              {
+                "document_id": "NEW",
+                "document_type": "clinical_note",
+                "status": "provided",
+                "text": "Synthetic appointment confirmation: follow-up visit scheduled.",
+                "submitted_in_review": null
+              }
+            ]
+          },
+          "screening_without_symptoms": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "cosmetic_or_reconstructive": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "required_by_trauma_or_congenital_anomaly": null,
+          "experimental_or_investigational": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "medically_unnecessary": {
+            "status": "ruled_out",
+            "source": "synthetic-clinician",
+            "reason": "Synthetic negative exclusion finding.",
+            "evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+              }
+            ]
+          },
+          "preventive_coverage": null
+        },
+        "payment_determination": null,
+        "authorization_assessment": null
+      },
+      "prior_review": {
+        "claim": {
+          "claim_id": "CLM-1",
+          "review_id": "DENIAL-1",
+          "insurer": "HorizonCare",
+          "plan_name": "Silver PPO 2500",
+          "member_id": "MEMBER-1",
+          "claim_type": "pre_authorization",
+          "member_status": "active",
+          "service_date": "2025-03-10",
+          "service_location": "Synthetic clinic",
+          "provider_npi": "1234567890",
+          "procedure_code": "MRI-LUMBAR",
+          "procedure_description": null,
+          "diagnosis_codes": [
+            "M54.5"
+          ],
+          "claimed_amount": "1200",
+          "documents": [
+            {
+              "document_id": "NOTE",
+              "document_type": "clinical_note",
+              "status": "provided",
+              "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+              "submitted_in_review": null
+            },
+            {
+              "document_id": "HISTORY",
+              "document_type": "prior_treatment_history",
+              "status": "provided",
+              "text": "Synthetic treatment history: conservative treatment attempted.",
+              "submitted_in_review": null
+            }
+          ],
+          "notes": "",
+          "prior_authorization_approved": null,
+          "prior_claims": [],
+          "correction_declared": false,
+          "corrects_claim_id": null,
+          "coding_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ]
+            },
+            "status": "consistent",
+            "source": "synthetic-coding-reviewer",
+            "reason": "Synthetic coding assessment.",
+            "source_version": null
+          },
+          "treatment_history_applicability": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "status": "required",
+            "source": "synthetic-clinician",
+            "reason": "Treatment history applicable in this synthetic case."
+          },
+          "clinical_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "diagnosis_support": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "medical_necessity": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "conservative_treatment_attempted": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic finding for controller testing.",
+              "evidence": [
+                {
+                  "document_id": "HISTORY",
+                  "quote": "Synthetic treatment history: conservative treatment attempted."
+                }
+              ]
+            },
+            "conservative_treatment_contraindicated": null
+          },
+          "exclusion_assessment": {
+            "request": {
+              "claim_id": "CLM-1",
+              "review_id": "DENIAL-1",
+              "claim_type": "pre_authorization",
+              "procedure_code": "MRI-LUMBAR",
+              "diagnosis_codes": [
+                "M54.5"
+              ],
+              "expected_service_date": "2025-03-10",
+              "service_location": "Synthetic clinic",
+              "documents": [
+                {
+                  "document_id": "NOTE",
+                  "document_type": "clinical_note",
+                  "status": "provided",
+                  "text": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational.",
+                  "submitted_in_review": null
+                },
+                {
+                  "document_id": "HISTORY",
+                  "document_type": "prior_treatment_history",
+                  "status": "provided",
+                  "text": "Synthetic treatment history: conservative treatment attempted.",
+                  "submitted_in_review": null
+                }
+              ]
+            },
+            "screening_without_symptoms": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "cosmetic_or_reconstructive": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "required_by_trauma_or_congenital_anomaly": null,
+            "experimental_or_investigational": {
+              "status": "established",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "medically_unnecessary": {
+              "status": "ruled_out",
+              "source": "synthetic-clinician",
+              "reason": "Synthetic negative exclusion finding.",
+              "evidence": [
+                {
+                  "document_id": "NOTE",
+                  "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                }
+              ]
+            },
+            "preventive_coverage": null
+          },
+          "payment_determination": null,
+          "authorization_assessment": null
+        },
+        "decision": {
+          "context": {
+            "claim_id": "CLM-1",
+            "review_id": "DENIAL-1",
+            "reason": "Service is established as experimental or investigational.",
+            "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+            "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+            "policy_evidence": [
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "2",
+                "heading": "Member Eligibility and Plan Status",
+                "source_page": 1,
+                "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "7.1",
+                "heading": "Duplicate Claims",
+                "source_page": 3,
+                "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "6",
+                "heading": "Exclusions",
+                "source_page": 2,
+                "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "7.2",
+                "heading": "Coding Consistency",
+                "source_page": 3,
+                "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "3.2",
+                "heading": "Documentation Required",
+                "source_page": 2,
+                "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "5.1",
+                "heading": "MRI Coverage",
+                "source_page": 2,
+                "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "4",
+                "heading": "Medical Necessity Standard",
+                "source_page": 2,
+                "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "5.2",
+                "heading": "Non-Covered Imaging",
+                "source_page": 2,
+                "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+              },
+              {
+                "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                "section": "6",
+                "heading": "Exclusions",
+                "source_page": 2,
+                "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+              }
+            ],
+            "claim_evidence": [
+              "insurer=HorizonCare",
+              "plan_name=Silver PPO 2500",
+              "member_status=active",
+              "claim_id=CLM-1;review_id=DENIAL-1",
+              "duplicate_submission_id=DENIAL-1",
+              "prior_claims_checked=0",
+              "claim_id=CLM-1",
+              "review_id=DENIAL-1",
+              "procedure_code=MRI-LUMBAR",
+              "diagnosis_codes=('M54.5',)",
+              "coding_status=consistent",
+              "coding_source=synthetic-coding-reviewer",
+              "coding_source_version=None",
+              "coding_reason=Synthetic coding assessment.",
+              "expected_service_date=2025-03-10",
+              "service_location=Synthetic clinic",
+              "document=NOTE;type=clinical_note;status=provided",
+              "treatment_history_applicability=required",
+              "applicability_source=synthetic-clinician",
+              "applicability_reason=Treatment history applicable in this synthetic case.",
+              "document=HISTORY;type=prior_treatment_history;status=provided",
+              "claimed_amount=1200",
+              "high_value_threshold=5000",
+              "comparison=strictly_greater_than",
+              "diagnosis_support=established",
+              "diagnosis_support.source=synthetic-clinician",
+              "diagnosis_support.reason=Synthetic finding for controller testing.",
+              "medical_necessity=established",
+              "medical_necessity.source=synthetic-clinician",
+              "medical_necessity.reason=Synthetic finding for controller testing.",
+              "conservative_treatment_attempted=established",
+              "conservative_treatment_attempted.source=synthetic-clinician",
+              "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+              "conservative_treatment_contraindicated=unknown",
+              "screening_without_symptoms=ruled_out",
+              "screening_without_symptoms.source=synthetic-clinician",
+              "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+              "cosmetic_or_reconstructive=ruled_out",
+              "cosmetic_or_reconstructive.source=synthetic-clinician",
+              "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+              "experimental_or_investigational=established",
+              "experimental_or_investigational.source=synthetic-clinician",
+              "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+              "medically_unnecessary=ruled_out",
+              "medically_unnecessary.source=synthetic-clinician",
+              "medically_unnecessary.reason=Synthetic negative exclusion finding."
+            ],
+            "clinical_evidence": [
+              {
+                "document_id": "NOTE",
+                "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+              },
+              {
+                "document_id": "HISTORY",
+                "quote": "Synthetic treatment history: conservative treatment attempted."
+              }
+            ],
+            "missing_information": [],
+            "unresolved_information": [],
+            "decision_trace": [
+              {
+                "rule_id": "policy_resolution",
+                "outcome": "satisfied",
+                "proposed_action": null,
+                "reason": "Insurer and plan matched to the selected policy revision.",
+                "policy_evidence": [],
+                "claim_evidence": [
+                  "insurer=HorizonCare",
+                  "plan_name=Silver PPO 2500"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "inactive_plan",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Inactive-plan denial does not apply; other checks remain.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p1:s2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "2",
+                    "heading": "Member Eligibility and Plan Status",
+                    "source_page": 1,
+                    "quote": "Benefits are payable only if the member is enrolled and the Plan is active on the date of service.\nIf the member\u2019s Plan is inactive at the time services are rendered, the claim will be denied.\nDenial reason: \u201cPlan inactive at time of service.\u201d"
+                  }
+                ],
+                "claim_evidence": [
+                  "member_status=active"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "duplicate_claim",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "No duplicate found in the supplied history; continue other review checks.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.1:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "7.1",
+                    "heading": "Duplicate Claims",
+                    "source_page": 3,
+                    "quote": "A claim is considered duplicate if all of the following match:\n\uf0b7 Member ID\n\uf0b7 Provider NPI\n\uf0b7 Date of service\n\uf0b7 CPT / procedure code\n\uf0b7 Billed amount\nDuplicate claims will be denied with reason: \u201cDuplicate claim submission.\u201d"
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "6",
+                    "heading": "Exclusions",
+                    "source_page": 2,
+                    "quote": "5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1;review_id=DENIAL-1",
+                  "duplicate_submission_id=DENIAL-1",
+                  "prior_claims_checked=0"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "coding_consistency",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Trusted assessment reports consistent codes; other review checks remain.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p3:s7.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "7.2",
+                    "heading": "Coding Consistency",
+                    "source_page": 3,
+                    "quote": "Claims may be routed for coding review if diagnosis and procedure codes are clinically inconsistent\nbased on standard coding guidelines."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "procedure_code=MRI-LUMBAR",
+                  "diagnosis_codes=('M54.5',)",
+                  "coding_status=consistent",
+                  "coding_source=synthetic-coding-reviewer",
+                  "coding_source_version=None",
+                  "coding_reason=Synthetic coding assessment."
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "pre_authorization_documentation",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Required items are present; clinical evidence sufficiency and coverage still require assessment.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s3.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "3.2",
+                    "heading": "Documentation Required",
+                    "source_page": 2,
+                    "quote": "Prior Authorization requests must include:\n1. Ordering provider\u2019s clinical note\n2. Relevant diagnosis code(s)\n3. Prior treatment history (if applicable)\n4. Expected service date and location\nIf documentation is missing, the request will be pended until complete information is received."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "diagnosis_codes=('M54.5',)",
+                  "expected_service_date=2025-03-10",
+                  "service_location=Synthetic clinic",
+                  "document=NOTE;type=clinical_note;status=provided",
+                  "treatment_history_applicability=required",
+                  "applicability_source=synthetic-clinician",
+                  "applicability_reason=Treatment history applicable in this synthetic case.",
+                  "document=HISTORY;type=prior_treatment_history;status=provided"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "high_value_claim",
+                "outcome": "not_applicable",
+                "proposed_action": null,
+                "reason": "Claimed amount does not exceed $5,000; other review checks remain.",
+                "policy_evidence": [],
+                "claim_evidence": [
+                  "claimed_amount=1200",
+                  "high_value_threshold=5000",
+                  "comparison=strictly_greater_than"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": "AI_Engineer_Take_Home_Task.pdf, page 2, Core workflow rules",
+                "clinical_evidence": [],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "mri_clinical_conditions",
+                "outcome": "satisfied",
+                "proposed_action": null,
+                "reason": "Supported clinical conditions are established; remaining workflow and exclusion checks must precede approval.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "5.1",
+                    "heading": "MRI Coverage",
+                    "source_page": 2,
+                    "quote": "MRI is covered when all of the following conditions are met:\n\uf0b7 A covered diagnosis is present; and\n\uf0b7 Conservative treatment has been attempted (unless contraindicated); and\n\uf0b7 Prior Authorization has been approved.\nExamples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain\n\uf0b7 M51.26 Other intervertebral disc displacement, lumbar region"
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "4",
+                    "heading": "Medical Necessity Standard",
+                    "source_page": 2,
+                    "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;\n\uf0b7 Clinically appropriate in type, frequency, and setting;\n\uf0b7 Not primarily for convenience of the member or provider;\n\uf0b7 The most cost-effective option among clinically comparable alternatives.\nMedical Necessity determinations may involve internal clinical guidelines."
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "procedure_code=MRI-LUMBAR",
+                  "diagnosis_codes=('M54.5',)",
+                  "diagnosis_support=established",
+                  "diagnosis_support.source=synthetic-clinician",
+                  "diagnosis_support.reason=Synthetic finding for controller testing.",
+                  "medical_necessity=established",
+                  "medical_necessity.source=synthetic-clinician",
+                  "medical_necessity.reason=Synthetic finding for controller testing.",
+                  "conservative_treatment_attempted=established",
+                  "conservative_treatment_attempted.source=synthetic-clinician",
+                  "conservative_treatment_attempted.reason=Synthetic finding for controller testing.",
+                  "conservative_treatment_contraindicated=unknown"
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [
+                  {
+                    "document_id": "NOTE",
+                    "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                  },
+                  {
+                    "document_id": "HISTORY",
+                    "quote": "Synthetic treatment history: conservative treatment attempted."
+                  }
+                ],
+                "validated_payment_amount": null
+              },
+              {
+                "rule_id": "mri_exclusions",
+                "outcome": "matched",
+                "proposed_action": "deny_claim",
+                "reason": "Service is established as experimental or investigational.",
+                "policy_evidence": [
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.2:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "5.2",
+                    "heading": "Non-Covered Imaging",
+                    "source_page": 2,
+                    "quote": "Diagnostic imaging is not covered when:\n\uf0b7 Requested for screening without symptoms, unless explicitly included as preventive care;\n\uf0b7 Related to excluded procedures;\n\uf0b7 Lacking documentation supporting Medical Necessity."
+                  },
+                  {
+                    "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s6:1",
+                    "policy_id": "horizoncare_silver_ppo_2500_v3_2",
+                    "source_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
+                    "section": "6",
+                    "heading": "Exclusions",
+                    "source_page": 2,
+                    "quote": "The Plan does not cover:\n1. Cosmetic or reconstructive procedures not required by trauma or congenital anomaly\n2. Services deemed not Medically Necessary\n3. Experimental or investigational treatments\n4. Services for which required Prior Authorization was not obtained\n5. Duplicate claims for the same service date and provider, unless corrected and resubmitted"
+                  }
+                ],
+                "claim_evidence": [
+                  "claim_id=CLM-1",
+                  "review_id=DENIAL-1",
+                  "screening_without_symptoms=ruled_out",
+                  "screening_without_symptoms.source=synthetic-clinician",
+                  "screening_without_symptoms.reason=Synthetic negative exclusion finding.",
+                  "cosmetic_or_reconstructive=ruled_out",
+                  "cosmetic_or_reconstructive.source=synthetic-clinician",
+                  "cosmetic_or_reconstructive.reason=Synthetic negative exclusion finding.",
+                  "experimental_or_investigational=established",
+                  "experimental_or_investigational.source=synthetic-clinician",
+                  "experimental_or_investigational.reason=Synthetic negative exclusion finding.",
+                  "medically_unnecessary=ruled_out",
+                  "medically_unnecessary.source=synthetic-clinician",
+                  "medically_unnecessary.reason=Synthetic negative exclusion finding."
+                ],
+                "missing_information": [],
+                "unresolved_information": [],
+                "rule_source": null,
+                "clinical_evidence": [
+                  {
+                    "document_id": "NOTE",
+                    "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic or medically unnecessary. The requested service is experimental or investigational."
+                  }
+                ],
+                "validated_payment_amount": null
+              }
+            ]
+          },
+          "mode": "stub",
+          "action": "deny_claim",
+          "arguments": {}
+        },
+        "recorded_at": "2026-10-08T22:10:55.818426Z",
+        "previous_review_id": null,
+        "supplemental_input_json": null
+      },
+      "claim_reference": "CLM-1"
+    },
+    "new_relevant_evidence": {
+      "status": "not_established",
+      "source": "synthetic-clinician",
+      "reason": "New documentation contains no clinical information addressing the experimental-service denial.",
+      "evidence": [
+        {
+          "document_id": "NEW",
+          "quote": "Synthetic appointment confirmation: follow-up visit scheduled."
+        }
+      ]
+    }
+  }
+}

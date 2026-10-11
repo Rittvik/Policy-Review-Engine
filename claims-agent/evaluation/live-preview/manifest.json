@@ -1,0 +1,41 @@
+{
+  "mode": "preview_only",
+  "requests": [
+    {
+      "id": "L01",
+      "file": "L01.json",
+      "input_sha256": "cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
+      "payload_file_sha256": "7fe594d02164e4a88feb3c3df6ebd6a41bcedf8465f6777adf297241ca2103c3"
+    },
+    {
+      "id": "L02",
+      "file": "L02.json",
+      "input_sha256": "df6cd0026c4338cca3a7baecef49a4b86f7c770bbea2f269061faaecbb628189",
+      "payload_file_sha256": "0cc626156ef39467230633f800f2605824005b19d2a5b04d478a6c188badc668"
+    },
+    {
+      "id": "L03",
+      "file": "L03.json",
+      "input_sha256": "a5fb28889fcda1323b05b8176d6a18d6070a77114b76941d1b08d992c24da8c7",
+      "payload_file_sha256": "1914598bdb0abb402a0a423ea47061ae867c7cd09b0cac76be0c594f8d448921"
+    },
+    {
+      "id": "L04",
+      "file": "L04.json",
+      "input_sha256": "ff14847a885780383310b35d7f7fb3070ca84894372f10de3eb6f112e8d60ad0",
+      "payload_file_sha256": "90c4fe5c37e31e9dbf0704ad2ca3f7d0bad7b6c093bb67b354212b43b8294aef"
+    },
+    {
+      "id": "L05",
+      "file": "L05.json",
+      "input_sha256": "f6d4d5f75a2ad7ad00de393bb2b547d5fa3a3bbc55cbc6bb65b361f01d918b32",
+      "payload_file_sha256": "81ee20b81883c98ee04dd7104339fd89b341a14cd58eaa9223a5351de9b4c0a0"
+    },
+    {
+      "id": "L06",
+      "file": "L06.json",
+      "input_sha256": "2c576858650284991cf50f27e6171787ce54899593738146b6a3ba8172929c27",
+      "payload_file_sha256": "6c4c4278091f68832ce74a1cd3b7b45228d25cec8d2177c810087e41e2eeb8f3"
+    }
+  ]
+}

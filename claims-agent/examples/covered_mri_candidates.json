@@ -1,0 +1,48 @@
+{
+  "request_id": "req_27ee99b31b76c4dfc714c7356ba007d6925e7f94ef0d920c47d44b916bec92a7",
+  "findings": [
+    {
+      "topic": "diagnosis_support",
+      "status": "documented",
+      "statement": "Synthetic mock candidate; not a trusted assessment.",
+      "document_refs": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "medical_necessity",
+      "status": "documented",
+      "statement": "Synthetic mock candidate; not a trusted assessment.",
+      "document_refs": [
+        {
+          "document_id": "NOTE",
+          "quote": "Synthetic clinician assessment: diagnosis supported; MRI medically necessary. Symptomatic diagnostic request, not cosmetic, experimental, or medically unnecessary."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_attempted",
+      "status": "documented",
+      "statement": "Synthetic mock candidate; not a trusted assessment.",
+      "document_refs": [
+        {
+          "document_id": "HISTORY",
+          "quote": "Synthetic treatment history: conservative treatment attempted."
+        }
+      ],
+      "policy_refs": []
+    },
+    {
+      "topic": "conservative_treatment_contraindicated",
+      "status": "not_found",
+      "statement": null,
+      "document_refs": [],
+      "policy_refs": []
+    }
+  ]
+}

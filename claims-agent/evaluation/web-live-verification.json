@@ -1,0 +1,77 @@
+{
+  "scenario": "synthetic live Gemini through FastAPI",
+  "http_status": 200,
+  "decision_action": "route_to_senior_reviewer",
+  "extraction": {
+    "status": "validated_candidates",
+    "adapter_id": "gemini:gemini-3.5-flash-lite",
+    "prompt_version": "clinical-candidates-v1",
+    "request_id": "req_018810be56119ceb226eaa77a53752994f05b2a4c3110cfdf498b752bc49ec67",
+    "input_sha256": "018810be56119ceb226eaa77a53752994f05b2a4c3110cfdf498b752bc49ec67",
+    "candidates": {
+      "request_id": "req_018810be56119ceb226eaa77a53752994f05b2a4c3110cfdf498b752bc49ec67",
+      "findings": [
+        {
+          "topic": "diagnosis_support",
+          "status": "documented",
+          "statement": "The document states that the diagnosis is supported.",
+          "document_refs": [
+            {
+              "document_id": "NOTE",
+              "quote": "Synthetic clinician assessment: diagnosis supported"
+            }
+          ],
+          "policy_refs": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+              "quote": "Examples of covered diagnoses for lumbar spine MRI include:\n\uf0b7 M54.5 Low back pain"
+            }
+          ]
+        },
+        {
+          "topic": "medical_necessity",
+          "status": "documented",
+          "statement": "The document states that the MRI is medically necessary.",
+          "document_refs": [
+            {
+              "document_id": "NOTE",
+              "quote": "MRI medically necessary."
+            }
+          ],
+          "policy_refs": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s4:1",
+              "quote": "A service is considered Medically Necessary if it is:\n\uf0b7 Consistent with generally accepted standards of medical practice;"
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_attempted",
+          "status": "documented",
+          "statement": "The document states that conservative treatment was attempted.",
+          "document_refs": [
+            {
+              "document_id": "HISTORY",
+              "quote": "conservative treatment attempted."
+            }
+          ],
+          "policy_refs": [
+            {
+              "chunk_id": "horizoncare_silver_ppo_2500_v3_2:e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927:p2:s5.1:1",
+              "quote": "Conservative treatment has been attempted (unless contraindicated); and"
+            }
+          ]
+        },
+        {
+          "topic": "conservative_treatment_contraindicated",
+          "status": "not_found",
+          "statement": null,
+          "document_refs": [],
+          "policy_refs": []
+        }
+      ]
+    },
+    "reason": "schema_and_provenance_validated_not_clinical_truth"
+  },
+  "review_template_pending": true
+}
