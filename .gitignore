@@ -65,6 +65,8 @@ build/
 # ==============================================================================
 chrome-headless-shell/
 puppeteer-config.json
+.presentation-build/
+INTERVIEW_PREPARATION.md
 demo/
 **/demo/
 *.pptx
