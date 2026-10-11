@@ -13,6 +13,7 @@ DIRECTORIES = {
 FILES = ('README.md', 'SYSTEM_EXPLANATION_AND_TESTING_GUIDE.md', 'pyproject.toml',
          'uv.lock', '.gitignore', '.env.example', '.python-version')
 TOP_LEVEL_FILES = (
+    'README.md',
     'AI_Claims_Agent_Implementation_Plan.md',
     'AI_Claims_Agent_Collaborative_Coding_Prompt.md',
     'AI_Engineer_Take_Home_Task.pdf',
@@ -41,7 +42,10 @@ def build():
             top_path = PARENT / top_name
             if top_path.exists():
                 archive.write(top_path, top_name)
-    print(f'Created {output.name}: {len(paths) + len(TOP_LEVEL_FILES)} files; credentials and local state excluded.')
+    import shutil
+    root_zip = PARENT / 'claims-agent-submission.zip'
+    shutil.copy2(output, root_zip)
+    print(f'Created {output.name} and {root_zip.name}: {len(paths) + len(TOP_LEVEL_FILES)} files; credentials and local state excluded.')
     return output
 
 
