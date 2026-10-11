@@ -210,7 +210,3 @@ uv run --locked --extra gemini --env-file .env python -m claims_agent.cli review
 *Note: Live LLM extraction adheres to strict clinical bounding: model extractions are presented as untrusted candidate findings and must be confirmed by a clinical reviewer before any authorization can proceed.*
 
 ---
-
-## 📜 License & Compliance
-
-Built for enterprise healthcare evaluation. Designed to uphold strict zero-drift reproducibility, ERISA § 503 / ACA § 2719 regulatory transparency, and audit immutability.
