@@ -1,7 +1,7 @@
 {
   "report_version": 1,
   "mode": "offline",
-  "recorded_at": "2026-10-11T14:20:26.919405+00:00",
+  "recorded_at": "2026-10-11T15:33:00.746304+00:00",
   "policy_sha256": "e8a8f5462add048cf9b009d012857261034f09ffe7f57fde97ab16e88b330927",
   "live_status": "not_run",
   "passed": true,
@@ -5317,7 +5317,7 @@
               "rule_id": "policy_resolution",
               "outcome": "unresolved",
               "proposed_action": null,
-              "reason": "Cannot read policy PDF: /var/folders/x7/p4lz5gxs2_5g1p8b4cc7g8640000gn/T/claims-eval-omvapdnc/absent/horizoncare_silver_ppo_2500.pdf",
+              "reason": "Cannot read policy PDF: /var/folders/x7/p4lz5gxs2_5g1p8b4cc7g8640000gn/T/claims-eval-dtbvd4ly/absent/horizoncare_silver_ppo_2500.pdf",
               "policy_evidence": [],
               "claim_evidence": [],
               "missing_information": [],
@@ -9523,7 +9523,7 @@
               "action": "deny_claim",
               "arguments": {}
             },
-            "recorded_at": "2026-10-11T14:20:26.799336Z",
+            "recorded_at": "2026-10-11T15:33:00.642424Z",
             "previous_review_id": null,
             "supplemental_input_json": null
           },
@@ -10519,7 +10519,7 @@
                 "action": "deny_claim",
                 "arguments": {}
               },
-              "recorded_at": "2026-10-11T14:20:26.799336Z",
+              "recorded_at": "2026-10-11T15:33:00.642424Z",
               "previous_review_id": null,
               "supplemental_input_json": null
             },
@@ -11540,7 +11540,7 @@
                 "action": "deny_claim",
                 "arguments": {}
               },
-              "recorded_at": "2026-10-11T14:20:26.799336Z",
+              "recorded_at": "2026-10-11T15:33:00.642424Z",
               "previous_review_id": null,
               "supplemental_input_json": null
             },
@@ -13224,7 +13224,7 @@
               "action": "deny_claim",
               "arguments": {}
             },
-            "recorded_at": "2026-10-11T14:20:26.840640Z",
+            "recorded_at": "2026-10-11T15:33:00.682827Z",
             "previous_review_id": null,
             "supplemental_input_json": null
           },
@@ -14220,7 +14220,7 @@
                 "action": "deny_claim",
                 "arguments": {}
               },
-              "recorded_at": "2026-10-11T14:20:26.840640Z",
+              "recorded_at": "2026-10-11T15:33:00.682827Z",
               "previous_review_id": null,
               "supplemental_input_json": null
             },
@@ -15241,7 +15241,7 @@
                 "action": "deny_claim",
                 "arguments": {}
               },
-              "recorded_at": "2026-10-11T14:20:26.840640Z",
+              "recorded_at": "2026-10-11T15:33:00.682827Z",
               "previous_review_id": null,
               "supplemental_input_json": null
             },
@@ -16974,7 +16974,7 @@
         "mock_response": "extraction/L01_response.json"
       },
       "input_sha256": "cf5984bd6a00f2cd5bbbd59c4bf4a36a9a5c2e8d09dccbf754e50cf5ff0fa24f",
-      "elapsed_seconds": 0.0008,
+      "elapsed_seconds": 0.0007,
       "result": {
         "status": "validated_candidates",
         "adapter_id": "fixture-mock",
@@ -17147,7 +17147,7 @@
         "mock_response": "extraction/L02_response.json"
       },
       "input_sha256": "df6cd0026c4338cca3a7baecef49a4b86f7c770bbea2f269061faaecbb628189",
-      "elapsed_seconds": 0.0007,
+      "elapsed_seconds": 0.0006,
       "result": {
         "status": "validated_candidates",
         "adapter_id": "fixture-mock",
@@ -17310,7 +17310,7 @@
         "mock_response": "extraction/L03_response.json"
       },
       "input_sha256": "a5fb28889fcda1323b05b8176d6a18d6070a77114b76941d1b08d992c24da8c7",
-      "elapsed_seconds": 0.0007,
+      "elapsed_seconds": 0.0006,
       "result": {
         "status": "validated_candidates",
         "adapter_id": "fixture-mock",
@@ -17478,7 +17478,7 @@
         "mock_response": "extraction/L04_response.json"
       },
       "input_sha256": "ff14847a885780383310b35d7f7fb3070ca84894372f10de3eb6f112e8d60ad0",
-      "elapsed_seconds": 0.0007,
+      "elapsed_seconds": 0.0006,
       "result": {
         "status": "validated_candidates",
         "adapter_id": "fixture-mock",

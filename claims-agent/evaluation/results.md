@@ -1,6 +1,6 @@
 # Claims evaluation results
 
-Mode: **offline**. Recorded: 2026-10-11T14:20:26.919405+00:00.
+Mode: **offline**. Recorded: 2026-10-11T15:33:00.746304+00:00.
 Live Gemini status: **not_run**.
 
 Offline extraction scores describe mock harness behavior, not Gemini quality.
