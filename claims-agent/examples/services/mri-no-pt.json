@@ -27,7 +27,7 @@
       "document_id": "HISTORY",
       "document_type": "prior_treatment_history",
       "status": "provided",
-      "text": "Synthetic treatment history: conservative treatment attempted.",
+      "text": "Synthetic treatment history: conservative treatment was not attempted and no contraindication was documented.",
       "submitted_in_review": null
     }
   ],
@@ -73,7 +73,7 @@
           "document_id": "HISTORY",
           "document_type": "prior_treatment_history",
           "status": "provided",
-          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "text": "Synthetic treatment history: conservative treatment was not attempted and no contraindication was documented.",
           "submitted_in_review": null
         }
       ]
@@ -105,7 +105,7 @@
           "document_id": "HISTORY",
           "document_type": "prior_treatment_history",
           "status": "provided",
-          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "text": "Synthetic treatment history: conservative treatment was not attempted and no contraindication was documented.",
           "submitted_in_review": null
         }
       ]
@@ -139,7 +139,7 @@
       "evidence": [
         {
           "document_id": "HISTORY",
-          "quote": "Synthetic treatment history: conservative treatment attempted."
+          "quote": "Synthetic treatment history: conservative treatment was not attempted and no contraindication was documented."
         }
       ]
     },
@@ -168,7 +168,7 @@
           "document_id": "HISTORY",
           "document_type": "prior_treatment_history",
           "status": "provided",
-          "text": "Synthetic treatment history: conservative treatment attempted.",
+          "text": "Synthetic treatment history: conservative treatment was not attempted and no contraindication was documented.",
           "submitted_in_review": null
         }
       ]
